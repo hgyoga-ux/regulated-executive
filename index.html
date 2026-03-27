@@ -1070,7 +1070,7 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
 
       <div class="pullquote" style="margin:3rem 0;">"Getting overwhelmed is not a character flaw. It's an unregulated nervous system — and it can be addressed, deliberately and gently, breath by breath."</div>
 
-      <p style="margin-bottom:1.8rem;">Some of my most challenging days were the twelve-hour days I spent training yoga teachers. I did regulate my nervous system during the teaching — it was the nature of the work. And yet, stopping at the health food store afterward and browsing the aisles was what truly rejuvenated me. Looking back, if I had known the COSC Stress Continuum then, I would have welcomed those yellow zone signals and managed the stress with far more intention.</p>
+      <p style="margin-bottom:1.8rem;">Some of my most challenging days were the twelve-hour days I spent training yoga teachers. I did regulate my nervous system during the teaching — it was the nature of the work. At the time I knew to breathe deeper, lower in the body — and like most people, to exhale slowly through the mouth when stress hit. It's the most common advice given. But it's not the same as The Quiet Breath. What I hadn't yet discovered was Light and Slow — less air, quieter, in and out through the nose — the shift that actually changed the physiology. Looking back, if I had known the COSC Stress Continuum then, I would have welcomed those yellow zone signals and managed the stress with far more intention.</p>
 
       <p style="margin-bottom:1.8rem;">A leadership course cracked something open. I began to understand that we are living in a modern age that calls for a different way of showing up — in family, in community, in business. That the emotional distance I was experiencing was not a life sentence. That the power to become a positive influence had always been in my hands.</p>
 
@@ -1109,5 +1109,57 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
     </div>
   </footer>
 </div><!-- /blog -->
+
+<style>
+  #chat-bubble{position:fixed;bottom:1.8rem;right:1.8rem;z-index:9000;}
+  #chat-toggle{width:54px;height:54px;border-radius:50%;background:#E08840;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(224,136,64,0.45);transition:transform 0.3s ease;-webkit-tap-highlight-color:transparent;}
+  #chat-toggle:hover{transform:scale(1.08);}
+  #chat-toggle svg{width:22px;height:22px;fill:#0D1F3C;}
+  #chat-window{display:none;position:fixed;bottom:5rem;right:1.8rem;width:min(360px,calc(100vw - 2rem));height:500px;background:#0D1F3C;border:1px solid rgba(224,136,64,0.25);box-shadow:0 8px 40px rgba(0,0,0,0.5);z-index:9000;flex-direction:column;overflow:hidden;}
+  #chat-window.open{display:flex;}
+  #chat-header{background:rgba(224,136,64,0.1);border-bottom:1px solid rgba(224,136,64,0.2);padding:0.9rem 1.1rem;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+  #chat-header-title{font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:#E08840;}
+  #chat-header-sub{font-family:'Cormorant Garamond',serif;font-size:0.8rem;color:rgba(245,240,232,0.45);margin-top:0.1rem;}
+  #chat-close{background:none;border:none;color:rgba(245,240,232,0.4);cursor:pointer;font-size:1.1rem;padding:0.2rem;line-height:1;}
+  #chat-close:hover{color:#E08840;}
+  #chat-messages{flex:1;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:0.7rem;-webkit-overflow-scrolling:touch;}
+  .chat-msg{max-width:88%;padding:0.7rem 0.9rem;font-family:'Cormorant Garamond',serif;font-size:0.98rem;line-height:1.6;}
+  .chat-msg.assistant{background:rgba(245,240,232,0.06);border-left:2px solid #E08840;color:#F5F0E8;align-self:flex-start;}
+  .chat-msg.user{background:rgba(224,136,64,0.12);border-right:2px solid #E08840;color:#F5F0E8;align-self:flex-end;text-align:right;}
+  .chat-msg.thinking{font-style:italic;color:rgba(245,240,232,0.35);border-left:2px solid rgba(224,136,64,0.2);align-self:flex-start;background:rgba(245,240,232,0.03);font-family:'Cormorant Garamond',serif;font-size:0.9rem;padding:0.7rem 0.9rem;}
+  #chat-input-row{border-top:1px solid rgba(245,240,232,0.1);padding:0.7rem;display:flex;gap:0.5rem;flex-shrink:0;background:rgba(0,0,0,0.2);}
+  #chat-input{flex:1;background:rgba(245,240,232,0.05);border:1px solid rgba(245,240,232,0.12);color:#F5F0E8;font-family:'Cormorant Garamond',serif;font-size:0.95rem;padding:0.55rem 0.8rem;outline:none;-webkit-appearance:none;border-radius:0;}
+  #chat-input:focus{border-color:#E08840;}
+  #chat-input::placeholder{color:rgba(245,240,232,0.25);}
+  #chat-send{background:#E08840;border:none;color:#0D1F3C;font-family:'Cinzel',serif;font-size:0.52rem;letter-spacing:0.18em;text-transform:uppercase;padding:0 0.9rem;cursor:pointer;transition:opacity 0.2s;flex-shrink:0;}
+  #chat-send:disabled{opacity:0.35;cursor:not-allowed;}
+</style>
+
+<div id="chat-bubble">
+  <button id="chat-toggle" onclick="toggleChat()" aria-label="Chat">
+    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+  </button>
+</div>
+
+<div id="chat-window">
+  <div id="chat-header">
+    <div><div id="chat-header-title">The Regulated Executive</div><div id="chat-header-sub">Ask me anything</div></div>
+    <button id="chat-close" onclick="toggleChat()">&#x2715;</button>
+  </div>
+  <div id="chat-messages">
+    <div class="chat-msg assistant">Hello. I am here to answer your questions about The Regulated Executive and how breath reeducation might help you. What is on your mind?</div>
+  </div>
+  <div id="chat-input-row">
+    <input id="chat-input" type="text" placeholder="Ask a question..." onkeydown="if(event.key==='Enter'){sendChat();}">
+    <button id="chat-send" onclick="sendChat()">Send</button>
+  </div>
+</div>
+
+<script>
+var chatHistory=[];var chatOpen=false;
+function toggleChat(){chatOpen=!chatOpen;var w=document.getElementById('chat-window');if(chatOpen){w.classList.add('open');document.getElementById('chat-input').focus();}else{w.classList.remove('open');}}
+function addMsg(role,text){var m=document.getElementById('chat-messages');var d=document.createElement('div');d.className='chat-msg '+role;d.textContent=text;m.appendChild(d);m.scrollTop=m.scrollHeight;return d;}
+async function sendChat(){var input=document.getElementById('chat-input');var send=document.getElementById('chat-send');var text=input.value.trim();if(!text||send.disabled)return;input.value='';send.disabled=true;addMsg('user',text);chatHistory.push({role:'user',content:text});var thinking=addMsg('thinking','Heather is thinking...');try{var r=await fetch('/.netlify/functions/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:chatHistory})});var data=await r.json();var reply=(data.content&&data.content[0]&&data.content[0].text)?data.content[0].text:'Something went quiet. Please email Info@TheRegulatedExecutive.com';thinking.remove();addMsg('assistant',reply);chatHistory.push({role:'assistant',content:reply});}catch(e){thinking.remove();addMsg('assistant','Something went quiet. Please email Info@TheRegulatedExecutive.com');}send.disabled=false;input.focus();}
+</script>
 </body>
 </html>

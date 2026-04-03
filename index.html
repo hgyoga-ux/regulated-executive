@@ -546,7 +546,8 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none !important; }
   #menuBtn { display: inline-block !important; }
-  .nav-brand { font-size: 0.65rem; }
+  .nav-brand { font-size: 0.55rem; letter-spacing: 0.08em; }
+  .nav-brand img { width: 24px !important; height: 24px !important; }
 
   .two-col,
   .about-grid,
@@ -586,6 +587,10 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
 
 <!-- MOBILE OVERLAY -->
 <div id="mobileNav" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:#0D1F3C; z-index:9997; flex-direction:column; align-items:center; justify-content:center; gap:1.8rem;">
+  <div style="position:absolute; top:0; left:0; right:0; padding:1.2rem 1.5rem; border-bottom:1px solid rgba(224,136,64,0.2); display:flex; align-items:center; justify-content:space-between;">
+    <span style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.2em; color:var(--amber); text-transform:uppercase;">The Regulated Executive</span>
+    <button type="button" onclick="toggleMenu();return false;" style="background:none; border:none; color:rgba(245,240,232,0.5); font-size:1.2rem; cursor:pointer; padding:0.2rem 0.5rem; -webkit-tap-highlight-color:transparent;">✕</button>
+  </div>
   <button type="button" ontouchend="goTo('home');return false;" onclick="goTo('home');return false;" style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1.2rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Home</button>
   <button type="button" ontouchend="goTo('about');return false;" onclick="goTo('about');return false;" style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1.2rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">About</button>
   <button type="button" ontouchend="goTo('services');return false;" onclick="goTo('services');return false;" style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1.2rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Services</button>
@@ -741,10 +746,10 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
 <!-- ══════════════════════════════════════════════ ABOUT -->
 <div id="about" class="page">
 
-  <section style="padding:10rem 0 5rem; border-bottom:1px solid rgba(245,240,232,0.08);">
+  <section style="padding:8rem 0 5rem; border-bottom:1px solid rgba(245,240,232,0.08);">
     <div class="container">
       <span class="section-label">About</span>
-      <h1>The science of calm<br>is not a soft skill.</h1>
+      <h1>The science of calm is your most powerful leadership tool — and the one you haven't been taught.</h1>
       <span class="rule rule--left" style="margin-top:1.5rem; margin-bottom:1.5rem;"></span>
       <p style="max-width:580px; font-size:clamp(1.05rem,1.5vw,1.25rem);">The Regulated Executive exists at the intersection of performance science, nervous system regulation, and the lived reality of high-stakes leadership.</p>
     </div>

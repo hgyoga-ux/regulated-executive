@@ -173,9 +173,14 @@ nav.scrolled {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
   flex-direction: column;
   gap: 5px;
+  -webkit-tap-highlight-color: transparent;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
 }
 #menuBtn span {
   display: block;
@@ -572,27 +577,27 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
 
 <!-- NAV -->
 <nav id="mainNav">
-  <button class="nav-brand" onclick="goTo('home')"><img src="RE_logo.png" alt="RE" style="width:30px;height:30px;border-radius:50%;vertical-align:middle;margin-right:0.6rem;">The <span>Regulated</span> Executive</button>
+  <button type="button" class="nav-brand" onclick="goTo('home');return false;"><img src="RE_logo.png" alt="RE" style="width:30px;height:30px;border-radius:50%;vertical-align:middle;margin-right:0.6rem;">The <span>Regulated</span> Executive</button>
   <ul class="nav-links">
-    <li><button onclick="goTo('home')">Home</button></li>
-    <li><button onclick="goTo('about')">About</button></li>
-    <li><button onclick="goTo('services')">Services</button></li>
-    <li><button onclick="goTo('contact')">Contact</button></li>
-    <li><button onclick="goTo('blog')">Story</button></li>
+    <li><button type="button" onclick="goTo('home');return false;">Home</button></li>
+    <li><button type="button" onclick="goTo('about');return false;">About</button></li>
+    <li><button type="button" onclick="goTo('services');return false;">Services</button></li>
+    <li><button type="button" onclick="goTo('contact');return false;">Contact</button></li>
+    <li><button type="button" onclick="goTo('blog');return false;">Story</button></li>
   </ul>
   <a href="https://calendly.com/generationalhealth-duck" target="_blank" class="nav-cta">Book a Session</a>
-  <button id="menuBtn" onclick="toggleMenu()" aria-label="Menu">
+  <button id="menuBtn" type="button" onclick="toggleMenu();return false;" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
 <!-- MOBILE OVERLAY -->
 <div id="mobileNav" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:#0D1F3C; z-index:998; flex-direction:column; align-items:center; justify-content:center; gap:1.8rem;">
-  <button onclick="goTo('home')" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">Home</button>
-  <button onclick="goTo('about')" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">About</button>
-  <button onclick="goTo('services')" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">Services</button>
-  <button onclick="goTo('contact')" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">Contact</button>
-  <button onclick="goTo('blog')" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">Story</button>
+  <button type="button" onclick="goTo('home');return false;" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">Home</button>
+  <button type="button" onclick="goTo('about');return false;" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">About</button>
+  <button type="button" onclick="goTo('services');return false;" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">Services</button>
+  <button type="button" onclick="goTo('contact');return false;" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">Contact</button>
+  <button type="button" onclick="goTo('blog');return false;" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">Story</button>
   <a href="https://calendly.com/generationalhealth-duck" target="_blank" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#E08840;text-decoration:none;padding:0.8rem 2rem;text-align:center;width:100%;display:block;">Book a Session</a>
 </div>
 
@@ -608,7 +613,7 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
       <p class="hero-tagline">Clarity <span>·</span> Calm <span>·</span> Command</p>
       <p class="hero-pitch">You're incredibly successful — and completely wired the moment you stop. I help entrepreneurs, executive parents, and non-profit leaders retrain the breathing patterns driving their chronic stress — building the Hardiness, Endurance, and Resilience to perform at their peak, move through pressure without breaking, and actually recover at night.</p>
       <div class="hero-ctas">
-        <button class="btn-primary" onclick="goTo('about')">Explore The Method</button>
+        <button type="button" class="btn-primary" onclick="goTo('about');return false;">Explore The Method</button>
         <a href="https://calendly.com/generationalhealth-duck" target="_blank" class="btn-ghost">Book Complimentary Session</a>
       </div>
     </div>
@@ -705,7 +710,7 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
 
       <div style="text-align:center;">
         <p style="max-width:520px; margin:0 auto 2rem;">Rooted in the <strong>COSC Stress Continuum</strong> — the same framework trusted by the US Navy and Marine Corps to regulate performance under pressure.</p>
-        <button class="btn-ghost" onclick="goTo('about')">Learn the Framework</button>
+        <button type="button" class="btn-ghost" onclick="goTo('about');return false;">Learn the Framework</button>
       </div>
     </div>
   </section>
@@ -770,12 +775,42 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
           <p style="margin-bottom:1.4rem;">Over 20 years, I've worked alongside entrepreneurs, executive parents, and non-profit leaders who are extraordinary at what they do — and quietly exhausted by who they become when they stop.</p>
           <p style="margin-bottom:1.4rem;">The turning point wasn't a retreat or a mindset shift. It was breath. Learning that the way I breathed — mouth, fast, shallow — was actively sustaining the stress state I was trying to escape. Getting overwhelmed is not a character flaw. It's an unregulated nervous system — and it can be addressed, deliberately and gently, breath by breath.</p>
           <p style="margin-bottom:1.4rem;">Heather Greaves, yoga therapist, trained in evidence-based breath reeducation and built The Regulated Executive around one mission: giving high performers the physiological tools to close the gap between who they are at work and who they want to be everywhere else.</p>
-          <p style="margin-bottom:2rem; font-style:italic;"><button onclick="goTo('blog')" style="background:none;border:none;color:var(--amber);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;cursor:pointer;padding:0;text-decoration:underline;">Read the full story →</button></p>
+          <p style="margin-bottom:2rem; font-style:italic;"><button onclick="goTo('blog')" type="button" style="background:none;border:none;color:var(--amber);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;cursor:pointer;padding:0;text-decoration:underline;">Read the full story →</button></p>
 
           <div class="cosc-block">
             <span class="section-label">The Framework</span>
             <h3 style="color:var(--cream); margin-bottom:0.8rem;">The COSC Stress Continuum</h3>
-            <p>Developed for those operating under extreme pressure — the same conditions faced daily by executives, entrepreneurs, and non-profit leaders. It provides a precise map of stress states and a clear pathway back to regulation.</p>
+            <p style="margin-bottom:1.5rem;">Developed for those operating under extreme pressure — the same conditions faced daily by executives, entrepreneurs, and non-profit leaders. It provides a precise map of stress states and a clear pathway back to regulation.</p>
+
+            <!-- COSC Colour Zones Visual -->
+            <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin:1.5rem 0;">
+              <div style="background:#2D6A4F; padding:1.2rem 0.8rem; text-align:center;">
+                <div style="font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.2em; color:#ffffff; font-weight:600; margin-bottom:0.4rem;">GREEN</div>
+                <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:0.85rem; color:rgba(255,255,255,0.8); margin-bottom:0.6rem;">Ready</div>
+                <div style="width:30px; height:1px; background:rgba(255,255,255,0.3); margin:0 auto 0.6rem;"></div>
+                <div style="font-size:0.78rem; color:rgba(255,255,255,0.85); line-height:1.5;">Clear thinking. Decisive. Fully present. Peak performance.</div>
+              </div>
+              <div style="background:#C9A227; padding:1.2rem 0.8rem; text-align:center;">
+                <div style="font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.2em; color:#ffffff; font-weight:600; margin-bottom:0.4rem;">YELLOW</div>
+                <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:0.85rem; color:rgba(255,255,255,0.8); margin-bottom:0.6rem;">Reacting</div>
+                <div style="width:30px; height:1px; background:rgba(255,255,255,0.3); margin:0 auto 0.6rem;"></div>
+                <div style="font-size:0.78rem; color:rgba(255,255,255,0.9); line-height:1.5;">Activated. Necessary for growth. The skill is returning to green quickly.</div>
+              </div>
+              <div style="background:#C96A2B; padding:1.2rem 0.8rem; text-align:center;">
+                <div style="font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.2em; color:#ffffff; font-weight:600; margin-bottom:0.4rem;">ORANGE</div>
+                <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:0.85rem; color:rgba(255,255,255,0.8); margin-bottom:0.6rem;">Injured</div>
+                <div style="width:30px; height:1px; background:rgba(255,255,255,0.3); margin:0 auto 0.6rem;"></div>
+                <div style="font-size:0.78rem; color:rgba(255,255,255,0.9); line-height:1.5;">Insomnia. Irritability. Decision fatigue. Burnout approaching.</div>
+              </div>
+              <div style="background:#9B2335; padding:1.2rem 0.8rem; text-align:center;">
+                <div style="font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.2em; color:#ffffff; font-weight:600; margin-bottom:0.4rem;">RED</div>
+                <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:0.85rem; color:rgba(255,255,255,0.8); margin-bottom:0.6rem;">Ill</div>
+                <div style="width:30px; height:1px; background:rgba(255,255,255,0.3); margin:0 auto 0.6rem;"></div>
+                <div style="font-size:0.78rem; color:rgba(255,255,255,0.9); line-height:1.5;">Complete breakdown. Chronic illness. System failure.</div>
+              </div>
+            </div>
+            <p style="font-size:0.8rem; color:rgba(224,136,64,0.6); font-style:italic; text-align:right;">Trusted by the US Navy and Marine Corps</p>
+
             <div class="cosc-row">
               <div class="cosc-item"><div class="cosc-letter">C</div><div class="cosc-word">Combat</div></div>
               <div class="cosc-item"><div class="cosc-letter">O</div><div class="cosc-word">Operational</div></div>
@@ -797,7 +832,7 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
     <div class="container--narrow">
       <p style="font-style:italic; font-size:clamp(1.2rem,1.7vw,1.5rem); color:var(--cream); line-height:1.7;">"This isn't about slowing down. It's about gaining the physiological control to perform at your ceiling — then genuinely recover when it matters."</p>
       <span class="rule" style="margin-top:2rem; margin-bottom:2rem;"></span>
-      <button class="btn-primary" onclick="goTo('services')">See How We Work Together</button>
+      <button type="button" class="btn-primary" onclick="goTo('services');return false;">See How We Work Together</button>
     </div>
   </section>
 
@@ -875,7 +910,7 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
             <li>Ongoing support between sessions</li>
             <li>Program structure decided in collaboration</li>
           </ul>
-          <button class="btn-ghost" onclick="goTo('contact')">Enquire</button>
+          <button type="button" class="btn-ghost" onclick="goTo('contact');return false;">Enquire</button>
         </div>
       </div>
 

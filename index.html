@@ -588,11 +588,22 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
 </nav>
 
 <!-- MOBILE OVERLAY -->
-<div id="mobileNav" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:#0D1F3C; z-index:9997; flex-direction:column; align-items:center; justify-content:flex-start; padding-top:5rem; gap:0.5rem;">
-  <div style="position:absolute; top:0; left:0; right:0; padding:1rem 1.5rem; border-bottom:1px solid rgba(224,136,64,0.2); display:flex; align-items:center; justify-content:space-between; background:#0D1F3C;">
-    <span style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.2em; color:var(--amber); text-transform:uppercase;">The Regulated Executive</span>
+<div id="mobileNav" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:#0D1F3C; z-index:9997; flex-direction:column; align-items:stretch; overflow-y:auto;">
+  <!-- Header -->
+  <div style="padding:1rem 1.5rem; border-bottom:1px solid rgba(224,136,64,0.2); display:flex; align-items:center; justify-content:space-between; background:#0D1F3C; position:sticky; top:0; z-index:1;">
+    <span style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.2em; color:#E08840; text-transform:uppercase;">The Regulated Executive</span>
     <button type="button" onclick="toggleMenu();return false;" style="background:none; border:none; color:rgba(245,240,232,0.6); font-size:1.2rem; cursor:pointer; padding:0.2rem 0.5rem; -webkit-tap-highlight-color:transparent;">✕</button>
   </div>
+  <!-- Nav items -->
+  <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; flex:1; gap:0.5rem; padding:2rem 0;">
+    <button type="button" ontouchend="goTo('home');return false;" onclick="goTo('home');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Home</button>
+    <button type="button" ontouchend="goTo('about');return false;" onclick="goTo('about');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">About</button>
+    <button type="button" ontouchend="goTo('services');return false;" onclick="goTo('services');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Services</button>
+    <button type="button" ontouchend="goTo('contact');return false;" onclick="goTo('contact');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Contact</button>
+    <button type="button" ontouchend="goTo('blog');return false;" onclick="goTo('blog');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Story</button>
+    <a href="https://calendly.com/generationalhealth-duck" target="_blank" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#E08840;text-decoration:none;padding:1rem 3rem;text-align:center;width:100%;display:block;">Book a Session</a>
+  </div>
+</div>
   <button type="button" ontouchend="goTo('home');return false;" onclick="goTo('home');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Home</button>
   <button type="button" ontouchend="goTo('about');return false;" onclick="goTo('about');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">About</button>
   <button type="button" ontouchend="goTo('services');return false;" onclick="goTo('services');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Services</button>
@@ -758,7 +769,7 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
   <section style="padding:8rem 0 5rem; border-bottom:1px solid rgba(245,240,232,0.08);">
     <div class="container">
       <span class="section-label">About</span>
-      <h1>The science of calm is your most powerful leadership tool — and the one you haven't been taught.</h1>
+      <h1><span style="font-size:clamp(1rem,1.8vw,1.4rem); line-height:1.4;">The science of calm is your most powerful leadership tool — and the one you haven't been taught.</span></h1>
       <span class="rule rule--left" style="margin-top:1.5rem; margin-bottom:1.5rem;"></span>
       <p style="max-width:580px; font-size:clamp(1.05rem,1.5vw,1.25rem);">The Regulated Executive exists at the intersection of performance science, nervous system regulation, and the lived reality of high-stakes leadership.</p>
     </div>
@@ -1061,6 +1072,15 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
     target.classList.add('active');
     var mob = document.getElementById('mobileNav');
     if (mob) mob.style.display = 'none';
+    // Highlight active desktop nav button
+    var navBtns = document.querySelectorAll('.nav-links button');
+    for (var j = 0; j < navBtns.length; j++) {
+      navBtns[j].style.color = '';
+    }
+    var activeBtns = document.querySelectorAll('.nav-links button[onclick*="' + id + '"]');
+    for (var k = 0; k < activeBtns.length; k++) {
+      activeBtns[k].style.color = '#E08840';
+    }
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     window.scrollTo({top: 0, left: 0, behavior: 'instant'});

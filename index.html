@@ -170,24 +170,8 @@ nav.scrolled {
 /* ── MOBILE MENU BUTTON ── */
 #menuBtn {
   display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 12px;
-  flex-direction: column;
-  gap: 5px;
-  -webkit-tap-highlight-color: transparent;
-  min-width: 44px;
-  min-height: 44px;
-  align-items: center;
-  justify-content: center;
 }
-#menuBtn span {
-  display: block;
-  width: 22px;
-  height: 1px;
-  background: var(--cream);
-}
+
 
 /* ── PAGES ── */
 .page { display: none; min-height: 100vh; }
@@ -421,6 +405,7 @@ nav.scrolled {
 .about-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 5rem; align-items: start; padding: 5rem 0; }
 .portrait-img {
   width: 100%;
+  max-width: 320px;
   aspect-ratio: 3/4;
   object-fit: cover;
   object-position: center top;
@@ -550,7 +535,7 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
 /* ── MOBILE ── */
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none !important; }
-  #menuBtn { display: flex !important; }
+  #menuBtn { display: inline-block !important; }
   .nav-brand { font-size: 0.65rem; }
 
   .two-col,
@@ -586,9 +571,7 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
     <li><button type="button" onclick="goTo('blog');return false;">Story</button></li>
   </ul>
   <a href="https://calendly.com/generationalhealth-duck" target="_blank" class="nav-cta">Book a Session</a>
-  <button id="menuBtn" type="button" onclick="toggleMenu();return false;" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+  <button id="menuBtn" type="button" onclick="toggleMenu();return false;" aria-label="Menu" style="display:none; background:var(--amber); border:none; cursor:pointer; padding:0.5rem 1rem; font-family:'Cinzel',serif; font-size:0.65rem; letter-spacing:0.2em; color:var(--navy); text-transform:uppercase; -webkit-tap-highlight-color:transparent;">MENU</button>
 </nav>
 
 <!-- MOBILE OVERLAY -->
@@ -1045,12 +1028,14 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
       pages[i].classList.remove('active');
     }
     var target = document.getElementById(id);
+    if (!target) return;
     target.style.display = 'block';
     target.classList.add('active');
-    document.getElementById('mobileNav').style.display = 'none';
+    var mob = document.getElementById('mobileNav');
+    if (mob) mob.style.display = 'none';
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    window.scrollTo(0, 0);
+    window.scrollTo({top: 0, left: 0, behavior: 'instant'});
   }
 
   // ── MOBILE MENU ──────────────────────────────────────

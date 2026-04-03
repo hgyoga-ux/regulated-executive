@@ -170,6 +170,16 @@ nav.scrolled {
 /* ── MOBILE MENU BUTTON ── */
 #menuBtn {
   display: none;
+  background: var(--amber);
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--navy);
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -571,17 +581,17 @@ footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
     <li><button type="button" onclick="goTo('blog');return false;">Story</button></li>
   </ul>
   <a href="https://calendly.com/generationalhealth-duck" target="_blank" class="nav-cta">Book a Session</a>
-  <button id="menuBtn" type="button" onclick="toggleMenu();return false;" aria-label="Menu" style="display:none; background:var(--amber); border:none; cursor:pointer; padding:0.5rem 1rem; font-family:'Cinzel',serif; font-size:0.65rem; letter-spacing:0.2em; color:var(--navy); text-transform:uppercase; -webkit-tap-highlight-color:transparent;">MENU</button>
+  <button id="menuBtn" type="button" onclick="toggleMenu();return false;" aria-label="Menu" style="background:var(--amber); border:none; cursor:pointer; padding:0.5rem 1rem; font-family:'Cinzel',serif; font-size:0.65rem; letter-spacing:0.2em; color:var(--navy); text-transform:uppercase; -webkit-tap-highlight-color:transparent;">MENU</button>
 </nav>
 
 <!-- MOBILE OVERLAY -->
-<div id="mobileNav" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:#0D1F3C; z-index:998; flex-direction:column; align-items:center; justify-content:center; gap:1.8rem;">
-  <button type="button" onclick="goTo('home');return false;" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">Home</button>
-  <button type="button" onclick="goTo('about');return false;" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">About</button>
-  <button type="button" onclick="goTo('services');return false;" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">Services</button>
-  <button type="button" onclick="goTo('contact');return false;" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">Contact</button>
-  <button type="button" onclick="goTo('blog');return false;" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:0.8rem 2rem;text-align:center;width:100%;">Story</button>
-  <a href="https://calendly.com/generationalhealth-duck" target="_blank" style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:#E08840;text-decoration:none;padding:0.8rem 2rem;text-align:center;width:100%;display:block;">Book a Session</a>
+<div id="mobileNav" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:#0D1F3C; z-index:9997; flex-direction:column; align-items:center; justify-content:center; gap:1.8rem;">
+  <button type="button" ontouchend="goTo('home');return false;" onclick="goTo('home');return false;" style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1.2rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Home</button>
+  <button type="button" ontouchend="goTo('about');return false;" onclick="goTo('about');return false;" style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1.2rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">About</button>
+  <button type="button" ontouchend="goTo('services');return false;" onclick="goTo('services');return false;" style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1.2rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Services</button>
+  <button type="button" ontouchend="goTo('contact');return false;" onclick="goTo('contact');return false;" style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1.2rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Contact</button>
+  <button type="button" ontouchend="goTo('blog');return false;" onclick="goTo('blog');return false;" style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.28em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1.2rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Story</button>
+  <a href="https://calendly.com/generationalhealth-duck" target="_blank" style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.28em;text-transform:uppercase;color:#E08840;text-decoration:none;padding:1.2rem 3rem;text-align:center;width:100%;display:block;">Book a Session</a>
 </div>
 
 <!-- ══════════════════════════════════════════════ HOME -->

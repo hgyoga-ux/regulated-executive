@@ -49,7 +49,7 @@ body::before {
 
 /* ── TYPE ── */
 h1, h2, h3, h4 { font-family: 'Cinzel', serif; font-weight: 400; letter-spacing: 0.06em; line-height: 1.2; }
-h1 { font-size: clamp(2.2rem, 5vw, 4rem); }
+h1 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
 h2 { font-size: clamp(1.6rem, 3vw, 2.6rem); }
 h3 { font-size: clamp(1.1rem, 1.8vw, 1.5rem); }
 p  { font-size: clamp(1rem, 1.4vw, 1.2rem); color: var(--cream-dim); }
@@ -1187,4 +1187,4 @@ function addMsg(role,text){var m=document.getElementById('chat-messages');var d=
 async function sendChat(){var input=document.getElementById('chat-input');var send=document.getElementById('chat-send');var text=input.value.trim();if(!text||send.disabled)return;input.value='';send.disabled=true;addMsg('user',text);chatHistory.push({role:'user',content:text});var thinking=addMsg('thinking','Heather is thinking...');try{var r=await fetch('/.netlify/functions/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:chatHistory})});var data=await r.json();var reply=(data.content&&data.content[0]&&data.content[0].text)?data.content[0].text:'Something went quiet. Please email Info@TheRegulatedExecutive.com';thinking.remove();addMsg('assistant',reply);chatHistory.push({role:'assistant',content:reply});}catch(e){thinking.remove();addMsg('assistant','Something went quiet. Please email Info@TheRegulatedExecutive.com');}send.disabled=false;input.focus();}
 </script>
 </body>
-</html>
+</h

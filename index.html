@@ -4,1176 +4,475 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Regulated Executive — Clarity · Calm · Command</title>
-<link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAIAEBAAAAAAIACoAwAAJgAAACAgAAAAACAAzwoAAM4DAACJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAANvSURBVHicbZNLaFxVHMa//zn33Hszr87MzdCUNg+1sVV04RtDLI1SRaG0CLowiBvbiLpRqFXacRgtaKyiSKzSFhSlartr6yOLijWKQRBKs6gkRWkebUxi5nFnkpm5957zd1ECLvzW38dv8/0IaymwQJEMA/Ld/N67J9q33F+VTjfD0DoTTW9dnho/UPzkdwKitS4A0PVxQYhi0Xz+0hO3f9r7yCuLbvrBQMMz2igmQAoR2pKWc0H1x8HJ0cN73j910RQKAsWiIWYmScQHikM7vtk4cLRGdg/XfcOtFrM21wFSsLAdUDwl4xTMPDo/NnQ4f2Q0YiaLSPDx1568bWTDwLFaJLrZXwp1s6lMqwXWEQAGSQXhuJBhENQTqa7Rjm1HR/b7O4nERcFg60TXw/tXpN3NfiXUq6tK+z6iahlRuaR1uWx0tQztV6BXVmz2q2Gd7M6TXQOvMti23srvuWNRpXaYes3oZkM1q1WEfhWmsQpbCBkEAVhKUFsMttZoE0JR3TdLsdRDr+f33iUmMpv7A6asaTWBMISnCJsSLnKK9NL09JftwoyttwX3phOcsy1EzSY4aCFkZKeyvf1WTbo9rNkSzFyu1XFo93aUFhYiaSk803fn+B/XFudDaW079PUZc9PmLjp9+SpYGxhA1i23R6zdQAhCIwxQbjQRdx1YUmKhUpW1Smnetm2+ucOjC7PX0AhDCCKAmQFAJDm4IgQ0CQmybCgpkYi5VveGDlE4cfqe9747vw9C0NifswgM4LguWBBIkIkFzRlxy/LlX23ikrYU1qWSIClxabGMj3/4RWzvv28w5eV2z/5TQm9PJ/VtuRF2WwxQDhzoyq3+Xz8TA2rgo+OfzTnZp1BaDlt1X1FzFY1aDWS0dpVCS7NMZzMIbBfsOqHlrVcbg9Kp8yPPPi0IFA7OnRtOIJjhRFKpeCKkeAptXg522pM6lpS252FFuWC3LbSSGZXg4Orj0z+9TZcosJgNWUQT+97MDn3f8cCxlWxuE9WrmsOAWBsAAEkBUg5TIqniFM099vf4cy8Pf3GBmUkQEetCQbyTPzL6wuTZnV268lUsmVyy0l5kZT1YmQxZ6fYolkoudUb+yecnz+waPvjBt7pQEETE9D86qzeKL947lbmhzxdONwRTygRXtpanxw/mP/yNgPC/Ov8LThKnTfP5abQAAAAASUVORK5CYIKJUE5HDQoaCgAAAA1JSERSAAAAIAAAACAIBgAAAHN6evQAAAqWSURBVHicnVd9kJbVdf+dc+/zPO/77gv7xdd2WWDZBdmlRcQwqTh2UZBYkqZ1Io4aTCeaRmtN2pg0HVvTnW3SiY5pbUbjZBJtSR2rgm01MSDqahEkGMGoIcuHqwss3+Lu4n48X/ee0z/eF8E02k7vzDP3uXPnnvM7595zzu8QPmIoQFSZAAJ0qU7GFNSPNNY29Jdm1p4MykUAmJYn8eyxA+9NPXV6CMMYwssYJSIFFKogIuiH6bAfrZx0d3dHuPCVvqatM36n/a/aVy7cVz+/41RU3zJOUYMnlBRAAI1Lmg81pMODC4bf2vOJm5/t0z94rR9LOo8Q7ckUWjXkfw76UPOJoVdJ86bJi8//l0VrL9vX2LEs4aANLp8M55nEgVQUBCiYlA1grcDY0Qju7XlD+7ff+KuHnl997NXX6cc8CJXfrOY3rLX7hW77tft6Ov/m/K9c3jvnsmsyth02TYy61MGLQIRExGj1PBEJiISZFYaZbGhdWJQAbl/Xoa2P3v3aPc88vPLzv7rpph/kZ6/1QwBs/NIV4aJTLy35wrI7r+uva11r06QEl2TqPdRL4L1YqLKqkp4rhEiJSIjZszWZYaMahJGLSnHr6KFH7t16x8PHws6dl/5oS3LG0A8AUAVt2LCeL3ryxqXXX/JPNx0uNV0XJqPO517F5YGIBOqF1Duod4AooFUIRAATyFiQMSA2aixnMNaZwJIrlIPp8ckN67Z8/f7Bebe8vLynx5/xggWA7m4wEcnolVd3rLn0vrWHS03XBfFo7lzO3rlQnVjNM4jLAeeh4qEqFRAAwAQQg9kA1oCNJdUoIlUD1dzqaH6iMPXqm5f93dj63i+PEej17m7lnh6IrYaJ6JU67StLbruiv37uZ4N41Emes3cuUudY0gTqHCTPK9Z7gar/gAeIGN4YkLOADUDiQWFkEYABTS2NZwcnz7nm9qVfPaATd56kHjqmqmRBgK5ZYzbX9y95tqXr2iCLayT3mXN5JM6zpgkky6B5Ds0ziHdQ5wHxv3YFBmQM2FqICEgFrIAADGhIxInhicKLzRdf+8Tc392tXdEm0BbPBFIMb5j+QMdnV2VkFmqepeLyQEXN+8qzDJKl8FkKSRJIGlfmc780hqQJfJpC0gSSpZA8g2Yp1IvxPg+Qp5lTOm/dedd8AtGWJgKpJSi2zV44f29dW5fJUxbnSUQCzTKIc9A8h+QZJE2gedUTzkG9AFJ9BMwEwyBrQeIBFTAAJYIQA5wBXAiFvDN5iv66Ob+3sfXCJxW7DrNciNITs1YuSk0wF3mWi/hARUhdDs1zwFVcj+paswySpvDJhPg0JskS0jRWpJkiy4AzZ1wV6Jl/7yEiFi7LM7KzN8689Hx0osaijIa9De2dEK1R9al6sRULPdQ7JEkCVF3qJmIgy2BJwSDOkzgW8d6DyzYKgcwCWQ6KHIwXhMSwxkC9BbyDGmNVfAaR0v76tk60YIo9MqU09VRUP5u8JxWQqpJ6D/EeJIo5dZMwNgoIA5PKJUyMj+mR4ydG37t3+Ae1UbSxddaMhjAq/tk7o+OLCqViQ019ElEYQoIAQ7nAeQ+IQJ2HBsoqyuw9nY5qZ709pXGq7a9trUttoZ7Eq6owVAkqUBEYVXzmggW4/uOL4LzH4y/tlI+1z05af6sZv9y7d/RTl63a94UHHzz/6k//flYIguKbg4P5awOD5ImD9ubp2HnoBL75zM8wrVCEaiVxKZRIvSS2UN9fM6eehwuFYk5chKq+n6BFwQCSPMN9z+9AFASoiUL9+/Ub+Y/v+n7cWFMIVixd3HPrN7/d+eUbb9zR+/LO3traKaVdbw6YP/mHH9o//eFj+NZ/PIuT743BEKAqZwEoW4JCgMJQNKnIH1WbCEBNGMKLIHMeufc4OjTCSZoiDAIwE5XLZVssRpGqoFyMXG2xgNs+uRzT6yfjvt7tqCsV4CvBogCB4QWKM3UMtj5J4kA1dnSWNyhTNbkwlASiilIU0C2rL5VLOueFsdPs6U3P373u4ccGxsbGipEJMiKHpfPnyt1fvE66Fneae57ZhsBagLgii4hAgBKLElmGJg1uNOb2iYGRyMcjSkwAaSWtngVAbMBEyL1gaHxCl7TPLilg7/3J8w1+UsNM2zyv6Rf9BxYDoW7f0x/d8v1HzD/+9L/wzngMj4oM8FmZRCRgpsilI3NGBka4eWjiVH1y+pAaq2RIiEjOqWrIVOFEkHuPB3p3mL944DFtaWqpuf36K2+diKLH3dz2TW8MHr3KS4rx3LMLAjy043W8uP8gFjRPh1OAuSqPSIihwha16cjg/FND7zCOY6hjqL8PRBPElojZkankdWMt5k5txNRyCY01JXRd0Imnd+/nn//yVf3D5cvlhk+tbGhsbKhvn9nEhiOaO30Klna0YUnbLFx70WL85eUXY8wJTGABa0HMnsiwMsfzTg/0YRynLL+B8eeW9b7x3OxLBnIbdLJzuYoP1FiKCgWs6GzDv+3aA4jHqsWdeGPwOO54fDOtfWeYLjivTWKBzJjaaP5582Z4BW5YcTGUCKViEdsOHkNUiABjQYbBzDlsYCNxA6sGX3gd2zFGAEE/qc1XXv6dr++uW3Czjd/LXJaH4nwoyQTGxsaRxjE0y2DEocYQ4jjBeBzDgBCFFpkTCBHYWnAQgsMQCEJEpRLKNSWgUISxJrNhmPnSpGjB6bcf/PEzf/5teooOWYUSSmuOf3HPI5u/uuxvuzQIO40gg6rRMDKTy4AWokopznO4LEPJhihPKkOkEt9lrrwXGFMpSDYAhwFgAyCMwMZ4tkFONgwN9M3P7X38aRy78JhiF9kK/97gdTVeferw1kc3t6y4PRRvVW2mQCQAa4WyQUFgZqBSWCo8rlr1wAwYA5jKfasNQGEEDgKxljO2FnlUyrqObn/0qsNbX6FdlHd3gy0RtLsbTD10fLT43Y39de1zBia13GB1LINqBiBQZqOcVRT4KiUTqbK6agdRDVkyDNgAHIYgY7yxNmVr1RVqopljRx/6zit3PUU/oaOqSkQQBoCeHohCaedv/3Xf/S9946Hp8ckNrlATmSgUGwSJCWxKhYJysQguFsCFAkyhCPP+XAQXCpW9YgkmKihbk5kgSEwQqCuWoynp8H9+b9sd695a9fndVeX667mXAOgL3V2Fpv19H7v14m9df2Byy7U2iyPKs9Q7R6oSSIWWm3MqR5WVEUDk2RhHRLmxVikIwiws5TPHj6y//8Vv/Gt5xpyfz7pnR3xub/CB5H9mY333mnB13xOdX7vwtiu2NF9yjSczz6QxIc+ceg+BkAqYVLkih4SIhZiUjAHZIHBhSQ1p/0WHf7b+rlfv3PTKjBW7V9/7dPq/NSbvewLE0E9Ly5NNH79g3cK1K95qaFuWwLSSy8twjli9UrXdUmIoGVIbiFo7HsEfnDsysP1zex7p/czRbb+gf9dDIFKc05B8FIBzvEGqX2qL8HZ/80+bl87vbVu5cH9dW8e74eSWmIIGRygSACbEJe+G67LThxecHujreuu5vj868fK+A7Wzj7T+6FDy/2tOgXNaa4KqEpajFkU0Dk6b3nhw0sza41xXgvGYlo7GreOHR1pOnngXYxjCCpymHpL/S3v+34Du1YUH3QJHAAAAAElFTkSuQmCC">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<meta name="description" content="Breath reeducation for high performers. Nervous system regulation for entrepreneurs, executive parents, and non-profit leaders.">
 <style>
-:root {
-  --navy:  #0D1F3C;
-  --amber: #E08840;
-  --cream: #F5F0E8;
-  --cream-dim: rgba(245,240,232,0.65);
-  --navy-light: #162a50;
-  --t: 0.35s cubic-bezier(0.25,0.46,0.45,0.94);
-}
+  @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap');
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root{
+    --navy:#0D1F3C;
+    --amber:#E08840;
+    --ember:#C96A2B;
+    --teal:#4A9BA8;
+    --cream:#F5F0E8;
+    --ink:#1A1A1A;
+    --line: rgba(224,136,64,0.30);
+    --max: 900px;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation-duration:.001ms !important; transition-duration:.001ms !important; }
+  }
+  body{ margin:0; background:var(--cream); color:var(--ink); font-family:'Inter',system-ui,sans-serif; line-height:1.65; }
+  h1,h2,h3{ font-family:'Newsreader', Georgia, serif; color:var(--navy); margin:0; font-weight:500; }
+  p{ margin:0 0 14px; max-width:66ch; color:#2c2c2c; }
+  p:last-child{ margin-bottom:0; }
+  a{ color:var(--ember); }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--teal); outline-offset:3px; }
+  .wrap{ max-width:var(--max); margin:0 auto; padding:0 24px; }
+  .kicker{ font-size:12.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--ember); font-weight:600; margin-bottom:10px; }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
+  /* ---------- Nav ---------- */
+  nav.site-nav{
+    position:sticky; top:0; z-index:50; background:rgba(245,240,232,0.94);
+    backdrop-filter:blur(6px); border-bottom:1px solid var(--line);
+  }
+  nav.site-nav .wrap{ display:flex; align-items:center; justify-content:space-between; padding:14px 24px; }
+  .brand{ display:flex; align-items:center; gap:10px; font-family:'Newsreader'; font-size:18px; color:var(--navy); text-decoration:none; }
+  .brand img{ height:32px; width:auto; display:block; }
+  .nav-links{ display:flex; align-items:center; gap:28px; list-style:none; margin:0; padding:0; }
+  .nav-links a{ color:var(--navy); text-decoration:none; font-size:14.5px; font-weight:500; }
+  .nav-links a:hover{ color:var(--ember); }
+  .nav-cta{
+    background:var(--navy); color:var(--cream) !important; padding:10px 20px; border-radius:4px;
+    font-weight:600; font-size:14px;
+  }
+  .nav-toggle{ display:none; background:none; border:none; font-size:22px; color:var(--navy); cursor:pointer; }
+  @media (max-width:760px){
+    .nav-links{
+      position:absolute; top:100%; left:0; right:0; background:var(--cream);
+      flex-direction:column; align-items:flex-start; padding:20px 24px; gap:16px;
+      border-bottom:1px solid var(--line); display:none;
+    }
+    .nav-links.open{ display:flex; }
+    .nav-toggle{ display:block; }
+  }
 
-body {
-  background: var(--navy);
-  color: var(--cream);
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-weight: 300;
-  line-height: 1.75;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
+  /* ---------- Hero ---------- */
+  header.hero{
+    padding:80px 0 56px;
+    background: radial-gradient(circle at 85% 0%, rgba(74,155,168,0.10), transparent 55%), var(--cream);
+    text-align:center;
+  }
+  .hero .eyebrow{ font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--ember); font-weight:600; margin-bottom:16px; }
+  .hero h1{ font-size:38px; line-height:1.25; letter-spacing:-.01em; max-width:20ch; margin:0 auto; }
+  .hero .pillars{ margin-top:18px; color:var(--ember); font-weight:600; letter-spacing:.04em; font-size:14px; }
+  .hero p.lede{ margin:20px auto 0; font-size:17px; max-width:52ch; color:#2c2c2c; text-align:center; }
+  .hero .buttons{ margin-top:28px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+  .btn-primary{
+    background:var(--amber); color:var(--navy); font-weight:700; font-size:15px; text-decoration:none;
+    padding:14px 26px; border-radius:4px; transition:background .15s ease;
+  }
+  .btn-primary:hover{ background:var(--ember); color:#fff; }
+  .btn-secondary{
+    background:transparent; color:var(--navy); font-weight:600; font-size:15px; text-decoration:none;
+    padding:14px 22px; border:1px solid var(--navy); border-radius:4px;
+  }
+  .btn-secondary:hover{ background:var(--navy); color:var(--cream); }
 
-/* ── GRAIN ── */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0.3;
-}
+  .chips{ margin-top:44px; display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:6px; overflow:hidden; }
+  .chip{ background:#fff; padding:18px 14px; }
+  .chip b{ display:block; color:var(--navy); font-size:14.5px; }
+  .chip span{ display:block; font-size:12px; color:#5c5c5c; margin-top:3px; }
+  @media (max-width:640px){ .chips{ grid-template-columns:1fr 1fr; } }
 
-/* ── TYPE ── */
-h1, h2, h3, h4 { font-family: 'Cinzel', serif; font-weight: 400; letter-spacing: 0.06em; line-height: 1.2; }
-h1 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
-h2 { font-size: clamp(1.6rem, 3vw, 2.6rem); }
-h3 { font-size: clamp(1.1rem, 1.8vw, 1.5rem); }
-p  { font-size: clamp(1rem, 1.4vw, 1.2rem); color: var(--cream-dim); }
-p strong { color: var(--cream); font-weight: 500; }
-em { font-style: italic; color: var(--amber); }
-a  { color: var(--amber); text-decoration: none; transition: opacity var(--t); }
-a:hover { opacity: 0.75; }
+  /* ---------- Sections ---------- */
+  section{ padding:60px 0; }
+  section + section{ border-top:1px solid var(--line); }
+  section h2{ font-size:28px; margin-bottom:18px; letter-spacing:-.005em; }
 
-/* ── UTILS ── */
-.amber { color: var(--amber); }
-.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
-.container--narrow { max-width: 740px; margin: 0 auto; padding: 0 2rem; }
-.section-label {
-  display: block;
-  font-family: 'Cinzel', serif;
-  font-size: 0.62rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--amber);
-  margin-bottom: 1rem;
-}
-.rule { display: block; width: 48px; height: 1px; background: var(--amber); margin: 1.5rem auto; }
-.rule--left { margin-left: 0; }
-.section { padding: 7rem 0; }
+  .pattern-list{ list-style:none; padding:0; margin:0; }
+  .pattern-list li{ padding:10px 0 10px 26px; position:relative; font-size:15.5px; color:#2c2c2c; }
+  .pattern-list li::before{ content:"—"; position:absolute; left:0; color:var(--ember); }
 
-/* ── BUTTONS ── */
-.btn-primary {
-  font-family: 'Cinzel', serif;
-  font-size: 0.62rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--navy);
-  background: var(--amber);
-  padding: 1rem 2.2rem;
-  border: none;
-  cursor: pointer;
-  transition: opacity var(--t);
-  text-decoration: none;
-  display: inline-block;
-}
-.btn-primary:hover { opacity: 0.85; }
-.btn-ghost {
-  font-family: 'Cinzel', serif;
-  font-size: 0.62rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--cream-dim);
-  background: transparent;
-  padding: 1rem 2.2rem;
-  border: 1px solid rgba(245,240,232,0.25);
-  cursor: pointer;
-  transition: var(--t);
-  text-decoration: none;
-  display: inline-block;
-}
-.btn-ghost:hover { border-color: var(--amber); color: var(--amber); opacity: 1; }
+  blockquote{
+    margin:28px 0; padding:20px 24px; border-left:3px solid var(--amber);
+    background:#fff; font-family:'Newsreader'; font-style:italic; font-size:17px; color:var(--navy);
+  }
+  blockquote cite{ display:block; margin-top:10px; font-family:'Inter'; font-style:normal; font-size:13px; color:#5c5c5c; }
 
-/* ── NAV ── */
-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 1000;
-  padding: 1.4rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: background var(--t), backdrop-filter var(--t);
-}
-nav.scrolled {
-  background: rgba(13,31,60,0.94);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(224,136,64,0.15);
-}
-.nav-brand {
-  font-family: 'Cinzel', serif;
-  font-size: 0.78rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--cream);
-  cursor: pointer;
-  background: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0;
-}
-.nav-brand span { color: var(--amber); }
-.nav-links { display: flex; gap: 2.2rem; list-style: none; }
-.nav-links button {
-  font-family: 'Cinzel', serif;
-  font-size: 0.62rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--cream-dim);
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: color var(--t);
-  padding: 0;
-}
-.nav-links button:hover { color: var(--amber); }
-.nav-cta {
-  font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--navy);
-  background: var(--amber);
-  padding: 0.65rem 1.4rem;
-  border: none;
-  cursor: pointer;
-  transition: opacity var(--t);
-  text-decoration: none;
-}
-.nav-cta:hover { opacity: 0.85; }
+  .method-grid, .her-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:22px; }
+  .method-card, .her-card{ background:#fff; border:1px solid var(--line); border-radius:6px; padding:22px; border-top:3px solid var(--teal); }
+  .method-card .letter, .her-card .letter{ font-family:'Newsreader'; font-size:30px; color:var(--navy); line-height:1; margin-bottom:8px; }
+  .method-card h4, .her-card h4{ font-size:14.5px; font-weight:700; color:var(--navy); margin:0 0 8px; letter-spacing:.02em; }
+  .method-card p, .her-card p{ font-size:14.5px; max-width:none; }
+  @media (max-width:700px){ .method-grid, .her-grid{ grid-template-columns:1fr; } }
 
-/* ── MOBILE MENU BUTTON ── */
-#menuBtnWrap { display: none; }
-#menuBtn {
-  display: block;
-  background: var(--amber);
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  color: var(--navy);
-  text-transform: uppercase;
-  -webkit-tap-highlight-color: transparent;
-}
+  .zones{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:6px; overflow:hidden; margin-top:20px; }
+  .zone{ background:#fff; padding:18px; }
+  .zone .dot{ width:12px; height:12px; border-radius:50%; margin-bottom:10px; }
+  .zone.green .dot{ background:var(--teal); } .zone.yellow .dot{ background:var(--amber); }
+  .zone.orange .dot{ background:var(--ember); } .zone.red .dot{ background:#8a2e2e; }
+  .zone b{ display:block; font-size:13px; letter-spacing:.05em; text-transform:uppercase; color:var(--navy); margin-bottom:4px; }
+  .zone p{ font-size:13.5px; margin:0; }
+  @media (max-width:700px){ .zones{ grid-template-columns:1fr 1fr; } }
 
-/* ── PAGES ── */
-.page { display: none; min-height: 100vh; }
-.page.active { display: block; }
+  .cosc-note{ margin-top:22px; font-size:14.5px; font-style:italic; color:#4a4a4a; padding-left:14px; border-left:2px solid var(--line); }
 
-/* ── HERO ── */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 70% 60% at 80% 50%, rgba(224,136,64,0.07) 0%, transparent 60%),
-    var(--navy);
-}
-.breath-orb {
-  position: absolute;
-  right: 8%; top: 50%;
-  transform: translateY(-50%);
-  width: min(400px, 38vw);
-  height: min(400px, 38vw);
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(224,136,64,0.1) 0%, transparent 70%);
-  border: 1px solid rgba(224,136,64,0.15);
-  animation: breathe 6s ease-in-out infinite;
-}
-.breath-orb::before, .breath-orb::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid rgba(224,136,64,0.1);
-  animation: breathe 6s ease-in-out infinite;
-}
-.breath-orb::before { inset: 18%; animation-delay: 0.5s; }
-.breath-orb::after  { inset: 36%; animation-delay: 1s; }
-@keyframes breathe {
-  0%,100% { transform: scale(1);    opacity: 0.5; }
-  50%      { transform: scale(1.08); opacity: 1;   }
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 10rem 2rem 6rem;
-  max-width: 1100px;
-  margin: 0 auto;
-  width: 100%;
-}
-.hero-eyebrow {
-  font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--amber);
-  margin-bottom: 1.8rem;
-  display: block;
-}
-.hero-title {
-  font-family: 'Cinzel', serif;
-  font-size: clamp(2.8rem, 5.5vw, 5rem);
-  font-weight: 400;
-  line-height: 1.1;
-  color: var(--cream);
-  max-width: 660px;
-  margin-bottom: 1.8rem;
-}
-.hero-tagline {
-  font-family: 'Cinzel', serif;
-  font-size: 0.7rem;
-  letter-spacing: 0.4em;
-  color: var(--cream-dim);
-  text-transform: uppercase;
-  margin-bottom: 2.2rem;
-}
-.hero-tagline span { color: var(--amber); margin: 0 0.5em; }
-.hero-pitch {
-  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
-  color: var(--cream-dim);
-  max-width: 500px;
-  line-height: 1.85;
-  margin-bottom: 3rem;
-}
-.hero-ctas { display: flex; gap: 1.2rem; flex-wrap: wrap; align-items: center; }
+  /* ---------- Services offer cards ---------- */
+  .offer{ background:#fff; border:1px solid var(--line); border-radius:8px; padding:28px; margin-top:24px; }
+  .offer .label{ font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--teal); font-weight:700; margin-bottom:8px; }
+  .offer h3{ font-family:'Newsreader'; font-size:22px; margin-bottom:4px; }
+  .offer .meta{ font-size:13.5px; color:#5c5c5c; margin-bottom:14px; }
+  .offer .cta-note{ margin-top:16px; font-size:13.5px; color:#5c5c5c; font-style:italic; }
 
-/* ── PROOF STRIP ── */
-.proof-strip {
-  border-top: 1px solid rgba(245,240,232,0.08);
-  border-bottom: 1px solid rgba(245,240,232,0.08);
-  padding: 2rem 0;
-}
-.proof-inner {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0 2rem;
-}
-.proof-item {
-  font-family: 'Cinzel', serif;
-  font-size: 0.58rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--cream-dim);
-  text-align: center;
-}
-.proof-item strong {
-  display: block;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.6rem;
-  font-weight: 300;
-  color: var(--amber);
-  letter-spacing: 0;
-  margin-bottom: 0.3rem;
-}
+  .who-for{ list-style:none; padding:0; margin:20px 0 0; }
+  .who-for li{ padding:8px 0 8px 26px; position:relative; font-size:15px; }
+  .who-for li::before{ content:"✦"; position:absolute; left:0; color:var(--amber); font-size:13px; }
 
-/* ── PROBLEM ── */
-.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-.problem-list { list-style: none; margin-top: 2rem; }
-.problem-list li {
-  font-size: clamp(0.95rem, 1.3vw, 1.1rem);
-  color: var(--cream-dim);
-  padding: 0.85rem 0;
-  border-bottom: 1px solid rgba(245,240,232,0.07);
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-}
-.problem-list li::before { content: '—'; color: var(--amber); flex-shrink: 0; }
-.pullquote {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: clamp(1.4rem, 2.2vw, 2rem);
-  font-weight: 300;
-  line-height: 1.55;
-  color: var(--cream);
-  border-left: 2px solid var(--amber);
-  padding-left: 2rem;
-  margin: 2rem 0;
-}
+  /* ---------- Contact ---------- */
+  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-top:24px; }
+  .contact-detail{ background:#fff; border:1px solid var(--line); border-radius:6px; padding:22px; }
+  .contact-detail .label{ font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--ember); font-weight:700; margin-bottom:6px; }
+  form.enquiry{ display:flex; flex-direction:column; gap:12px; }
+  form.enquiry input, form.enquiry select, form.enquiry textarea{
+    padding:12px 14px; border:1px solid var(--line); border-radius:4px; font-family:'Inter'; font-size:14.5px;
+    background:#fff; color:var(--ink);
+  }
+  form.enquiry button{
+    align-self:flex-start; background:var(--navy); color:var(--cream); border:none; padding:13px 26px;
+    border-radius:4px; font-weight:700; font-size:14.5px; cursor:pointer;
+  }
+  form.enquiry button:hover{ background:var(--ember); }
+  @media (max-width:700px){ .contact-grid{ grid-template-columns:1fr; } }
 
-/* ── METHOD CARDS ── */
-.method-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 4rem; }
-.method-card {
-  background: rgba(245,240,232,0.03);
-  border: 1px solid rgba(245,240,232,0.08);
-  padding: 2.5rem;
-  position: relative;
-  transition: background var(--t);
-}
-.method-card::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 2px;
-  background: var(--amber);
-  transform: scaleX(0);
-  transition: transform var(--t);
-  transform-origin: left;
-}
-.method-card:hover::after { transform: scaleX(1); }
-.method-card:hover { background: rgba(224,136,64,0.05); }
-.method-letter {
-  font-family: 'Cinzel', serif;
-  font-size: 3.2rem;
-  color: var(--amber);
-  opacity: 0.2;
-  line-height: 1;
-  margin-bottom: 1rem;
-}
-.method-card h3 { font-size: 0.95rem; letter-spacing: 0.12em; margin-bottom: 0.8rem; color: var(--cream); }
-.method-card p  { font-size: 0.95rem; line-height: 1.75; }
+  /* ---------- Story ---------- */
+  .story-body p{ max-width:70ch; margin-bottom:18px; }
+  .story-byline{ margin-top:28px; font-size:14px; color:#5c5c5c; }
 
-/* ── ORNAMENT ── */
-.ornament {
-  text-align: center;
-  padding: 3rem 0;
-  font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
-  letter-spacing: 0.4em;
-  color: var(--amber);
-  opacity: 0.45;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-}
-.ornament::before, .ornament::after {
-  content: '';
-  width: 80px;
-  height: 1px;
-  background: currentColor;
-}
-
-/* ── TESTIMONIAL ── */
-.testimonial-section { padding: 5rem 0; border-top: 1px solid rgba(245,240,232,0.08); }
-.testimonial { text-align: center; max-width: 680px; margin: 0 auto; padding: 0 2rem; }
-.testimonial blockquote {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: clamp(1.2rem, 1.8vw, 1.7rem);
-  font-weight: 300;
-  line-height: 1.65;
-  color: var(--cream);
-  margin-bottom: 1.5rem;
-}
-.testimonial cite {
-  font-family: 'Cinzel', serif;
-  font-size: 0.58rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--amber);
-  font-style: normal;
-}
-
-/* ── CTA BAND ── */
-.cta-band {
-  padding: 5rem 0;
-  background: rgba(224,136,64,0.07);
-  border-top: 1px solid rgba(224,136,64,0.15);
-  border-bottom: 1px solid rgba(224,136,64,0.15);
-  text-align: center;
-}
-
-/* ── ABOUT ── */
-.about-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 5rem; align-items: start; padding: 5rem 0; }
-.portrait-img {
-  width: 100%;
-  max-width: 320px;
-  aspect-ratio: 3/4;
-  object-fit: cover;
-  object-position: center top;
-  border: 1px solid rgba(224,136,64,0.2);
-  display: block;
-}
-.credential-strip { margin-top: 1.8rem; border-top: 1px solid rgba(224,136,64,0.2); padding-top: 1.2rem; }
-.credential {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  padding: 0.5rem 0;
-  font-size: 0.85rem;
-  color: var(--cream-dim);
-}
-.credential::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--amber); flex-shrink: 0; }
-.cosc-block {
-  background: rgba(224,136,64,0.06);
-  border: 1px solid rgba(224,136,64,0.15);
-  padding: 2.5rem;
-  margin-top: 3rem;
-}
-.cosc-row { display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem; }
-.cosc-item { flex: 1; min-width: 100px; text-align: center; }
-.cosc-letter { font-family: 'Cinzel', serif; font-size: 2rem; color: var(--amber); margin-bottom: 0.2rem; }
-.cosc-word { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cream-dim); }
-
-/* ── SERVICES ── */
-.services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin: 4rem 0; }
-.service-card {
-  background: rgba(245,240,232,0.03);
-  border: 1px solid rgba(245,240,232,0.08);
-  padding: 3rem;
-  transition: background var(--t);
-}
-.service-card.featured { grid-column: 1 / -1; background: rgba(224,136,64,0.07); border-color: rgba(224,136,64,0.2); }
-.service-card:hover { background: rgba(224,136,64,0.05); }
-.service-tag { font-family: 'Cinzel', serif; font-size: 0.58rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--amber); display: block; margin-bottom: 1rem; }
-.service-name { font-family: 'Cinzel', serif; font-size: clamp(1.2rem, 1.8vw, 1.6rem); color: var(--cream); margin-bottom: 0.4rem; letter-spacing: 0.06em; }
-.service-duration { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1rem; color: var(--amber); margin-bottom: 1.5rem; }
-.service-desc { font-size: 1rem; color: var(--cream-dim); line-height: 1.8; margin-bottom: 1.8rem; }
-.service-includes { list-style: none; margin: 1.2rem 0 2rem; }
-.service-includes li {
-  font-size: 0.92rem;
-  color: var(--cream-dim);
-  padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(245,240,232,0.06);
-  display: flex;
-  align-items: baseline;
-  gap: 0.8rem;
-}
-.service-includes li::before { content: '✦'; color: var(--amber); font-size: 0.55rem; flex-shrink: 0; }
-
-/* ── CONTACT ── */
-.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 5rem; padding: 5rem 0; align-items: start; }
-.contact-aside { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(224,136,64,0.18); }
-label {
-  display: block;
-  font-family: 'Cinzel', serif;
-  font-size: 0.58rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--amber);
-  margin-bottom: 0.55rem;
-}
-input, textarea, select {
-  width: 100%;
-  background: rgba(245,240,232,0.04);
-  border: 1px solid rgba(245,240,232,0.14);
-  color: var(--cream);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1rem;
-  font-weight: 300;
-  padding: 0.85rem 1rem;
-  outline: none;
-  transition: border-color var(--t);
-  -webkit-appearance: none;
-  margin-bottom: 1.6rem;
-}
-input:focus, textarea:focus, select:focus { border-color: var(--amber); }
-input::placeholder, textarea::placeholder { color: rgba(245,240,232,0.25); }
-textarea { min-height: 130px; resize: vertical; }
-select option { background: var(--navy); }
-
-/* ── FOOTER ── */
-footer { border-top: 1px solid rgba(245,240,232,0.08); padding: 2.5rem 0; }
-.footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
-.footer-brand { font-family: 'Cinzel', serif; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--cream-dim); }
-.footer-tagline { font-family: 'Cinzel', serif; font-size: 0.55rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--amber); opacity: 0.55; }
-.footer-legal { font-size: 0.78rem; color: rgba(245,240,232,0.28); }
-
-/* ── MOBILE OVERLAY NAV ── */
-#mobileNav {
-  display: none;
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: #0D1F3C;
-  z-index: 998;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.8rem;
-}
-#mobileNav button {
-  font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: #F5F0E8;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.8rem 2.5rem;
-  -webkit-tap-highlight-color: transparent;
-}
-#mobileNav button:active { color: #E08840; }
-#mobileNav a {
-  font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: #E08840;
-  text-decoration: none;
-  padding: 0.8rem 2.5rem;
-}
-
-/* ── MOBILE ── */
-@media (max-width: 768px) {
-  .nav-links, .nav-cta { display: none !important; }
-  #menuBtnWrap { display: inline-block !important; }
-  .nav-brand { font-size: 0.55rem; letter-spacing: 0.08em; }
-  .nav-brand img { width: 24px !important; height: 24px !important; }
-
-  .two-col,
-  .about-grid,
-  .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
-
-  .services-grid { grid-template-columns: 1fr; }
-  .service-card.featured { grid-column: auto; }
-
-  .method-grid { grid-template-columns: 1fr; }
-
-  .breath-orb { right: -15%; opacity: 0.3; width: 50vw; height: 50vw; }
-  .hero-content { padding: 8rem 1.5rem 4rem; }
-
-  .hero-ctas { flex-direction: column; align-items: flex-start; }
-
-  .hero-tagline { font-size: 0.5rem !important; letter-spacing: 0.15em !important; }
-
-  .footer-inner { flex-direction: column; text-align: center; gap: 0.6rem; }
-
-  .who-inner { grid-template-columns: 1fr !important; }
-}
+  footer.site-footer{ padding:40px 0 60px; text-align:center; font-size:13px; color:#5c5c5c; border-top:1px solid var(--line); }
+  footer.site-footer .brand{ justify-content:center; margin-bottom:10px; }
+  footer.site-footer .pillars{ color:var(--ember); font-weight:600; letter-spacing:.03em; margin-bottom:6px; }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav id="mainNav">
-  <button type="button" class="nav-brand" onclick="goTo('home');return false;"><img src="RE_logo.png" alt="RE" style="width:30px;height:30px;border-radius:50%;vertical-align:middle;margin-right:0.6rem;">The <span>Regulated</span> Executive</button>
-  <ul class="nav-links">
-    <li><button type="button" onclick="goTo('home');return false;">Home</button></li>
-    <li><button type="button" onclick="goTo('about');return false;">About</button></li>
-    <li><button type="button" onclick="goTo('services');return false;">Services</button></li>
-    <li><button type="button" onclick="goTo('contact');return false;">Contact</button></li>
-    <li><button type="button" onclick="goTo('blog');return false;">Story</button></li>
-  </ul>
-  <a href="https://calendly.com/generationalhealth-duck" target="_blank" class="nav-cta">Book a Session</a>
-  <div id="menuBtnWrap"><button id="menuBtn" type="button" onclick="toggleMenu();return false;" aria-label="Menu" style="background:var(--amber); border:none; cursor:pointer; padding:0.5rem 1rem; font-family:'Cinzel',serif; font-size:0.65rem; letter-spacing:0.2em; color:var(--navy); text-transform:uppercase; -webkit-tap-highlight-color:transparent;">MENU</button></div>
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="#home"><img src="/RE_logo.png" alt="The Regulated Executive seal"> The Regulated Executive</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#story">Story</a></li>
+      <li><a class="nav-cta" href="https://calendly.com/generationalhealth-duck">Book a Session</a></li>
+    </ul>
+  </div>
 </nav>
 
-<!-- MOBILE OVERLAY -->
-<div id="mobileNav" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:#0D1F3C; z-index:9997; flex-direction:column; align-items:stretch; overflow-y:auto;">
-  <div style="padding:1rem 1.5rem; border-bottom:1px solid rgba(224,136,64,0.2); display:flex; align-items:center; justify-content:space-between; background:#0D1F3C; position:sticky; top:0; z-index:1;">
-    <span style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.2em; color:#E08840; text-transform:uppercase;">The Regulated Executive</span>
-    <button type="button" onclick="toggleMenu();return false;" style="background:none; border:none; color:rgba(245,240,232,0.6); font-size:1.2rem; cursor:pointer; padding:0.2rem 0.5rem; -webkit-tap-highlight-color:transparent;">✕</button>
-  </div>
-  <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; flex:1; gap:0.5rem; padding:2rem 0;">
-    <button type="button" ontouchend="goTo('home');return false;" onclick="goTo('home');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Home</button>
-    <button type="button" ontouchend="goTo('about');return false;" onclick="goTo('about');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">About</button>
-    <button type="button" ontouchend="goTo('services');return false;" onclick="goTo('services');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Services</button>
-    <button type="button" ontouchend="goTo('contact');return false;" onclick="goTo('contact');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Contact</button>
-    <button type="button" ontouchend="goTo('blog');return false;" onclick="goTo('blog');return false;" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#F5F0E8;background:none;border:none;cursor:pointer;padding:1rem 3rem;text-align:center;width:100%;-webkit-tap-highlight-color:transparent;">Story</button>
-    <a href="https://calendly.com/generationalhealth-duck" target="_blank" style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#E08840;text-decoration:none;padding:1rem 3rem;text-align:center;width:100%;display:block;">Book a Session</a>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════════════ HOME -->
-<div id="home" class="page active">
-
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="breath-orb"></div>
-    <div class="hero-content">
-      <span class="hero-eyebrow">Breath Reeducation for High Performers</span>
-      <h1 class="hero-title">You win at work.<br>But how can you<br><span class="amber">win at home?</span></h1>
-      <p class="hero-tagline">Clarity <span>·</span> Calm <span>·</span> Command</p>
-      <p class="hero-pitch">You win at work. But how can you win at home?<br><br>Something is keeping your body stuck. It's not your schedule. It's not your mindset. And it's closer than you think.</p>
-      <div class="hero-ctas">
-        <button type="button" class="btn-primary" onclick="goTo('about');return false;">Explore The Method</button>
-        <a href="https://calendly.com/generationalhealth-duck" target="_blank" class="btn-ghost">Book Complimentary Session</a>
-      </div>
+<!-- ============ HOME ============ -->
+<header class="hero" id="home">
+  <div class="wrap">
+    <div class="eyebrow">Breath Reeducation for High Performers</div>
+    <h1>You perform at work. Does your nervous system ever get the same performance at home?</h1>
+    <div class="pillars">Clarity · Calm · Command</div>
+    <p class="lede">Something is keeping your body stuck. It's not your schedule. It's not your mindset. And it's closer than you think.</p>
+    <div class="buttons">
+      <a class="btn-primary" href="https://calendly.com/generationalhealth-duck">Book Complimentary Session</a>
+      <a class="btn-secondary" href="#method">Explore The Method</a>
     </div>
-  </section>
-
-  <!-- PROOF STRIP -->
-  <div class="proof-strip">
-    <div class="proof-inner">
-      <div class="proof-item"><strong>NLSL</strong>Nasal · Light · Slow · Low</div>
-      <div class="proof-item"><strong>COSC</strong>Evidence-Based Framework</div>
-      <div class="proof-item"><strong>H.E.R.</strong>Hardiness · Endurance · Resilience</div>
-      <div class="proof-item"><strong>20 min</strong>Complimentary First Session</div>
+    <div class="chips">
+      <div class="chip"><b>NLSL</b><span>Nasal · Light · Slow · Low</span></div>
+      <div class="chip"><b>COSC</b><span>Evidence-Based Framework</span></div>
+      <div class="chip"><b>H.E.R.</b><span>Hardiness · Endurance · Resilience</span></div>
+      <div class="chip"><b>20 min</b><span>Complimentary First Session</span></div>
     </div>
   </div>
+</header>
 
-  <!-- PROBLEM -->
-  <section class="section" style="border-top:1px solid rgba(245,240,232,0.06);">
-    <div class="container">
-      <div class="two-col">
-        <div>
-          <span class="section-label">The Pattern You Know</span>
-          <h2>Wired at work.<br>Exhausted at home.</h2>
-          <span class="rule rule--left"></span>
-          <ul class="problem-list">
-            <li>You dominate the boardroom, but can't switch off at dinner</li>
-            <li>You fall asleep fine — and wake at 3am, mind running</li>
-            <li>You perform under pressure, but the pressure never leaves</li>
-            <li>You breathe in ways that keep your nervous system stuck in threat mode — mouth breathing, fast, shallow, heavy breathing</li>
-            <li>Recovery is a concept you vaguely remember</li>
-          </ul>
-        </div>
-        <div>
-          <div class="pullquote">"The gap between who you are at work and who you arrive as at home isn't a character flaw. It's an unregulated nervous system."</div>
-          <p style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.2em; color:rgba(224,136,64,0.7); margin-top:0.8rem;">— Heather Greaves, The Regulated Executive</p>
-          <div class="pullquote" style="margin-top:2rem;">"Getting overwhelmed is not a character flaw. It's an unregulated nervous system — and it can be addressed, deliberately and gently, breath by breath."</div>
-          <p style="margin-top:1.5rem;">You've felt it. You leave work. But work doesn't leave you. You wake at 3am for no reason. You're there at dinner — but not really there.</p><p style="margin-top:1rem;">This isn't who you are. This is what's happening in your body. <strong>And your body can change.</strong></p>
-        </div>
+<section id="pattern">
+  <div class="wrap">
+    <div class="kicker">The Pattern You Know</div>
+    <h2>Wired at work. Exhausted at home.</h2>
+    <ul class="pattern-list">
+      <li>You dominate the boardroom, but can't switch off at dinner</li>
+      <li>You fall asleep fine — and wake at 3am, mind running</li>
+      <li>You perform under pressure, but the pressure never leaves</li>
+      <li>You breathe in ways that keep your nervous system stuck in threat mode — mouth breathing, fast, shallow, heavy breathing</li>
+      <li>Recovery is a concept you vaguely remember</li>
+    </ul>
+    <blockquote>
+      The gap between who you are at work and who you arrive as at home isn't a character flaw. It's an unregulated nervous system.
+      <cite>— Heather Greaves, The Regulated Executive</cite>
+    </blockquote>
+    <p>You've felt it. You leave work. But work doesn't leave you. You wake at 3am for no reason. You're there at dinner — but not really there.</p>
+    <p>This isn't who you are. This is what's happening in your body. <b>And your body can change.</b></p>
+  </div>
+</section>
+
+<section id="method">
+  <div class="wrap">
+    <div class="kicker">The Method</div>
+    <h2>N · L · S · L</h2>
+    <p>There is a way through. It's not what you've been told. It's not what you've tried before. Four small habits. One big shift.</p>
+    <div class="method-grid">
+      <div class="method-card">
+        <div class="letter">L</div>
+        <h4>Light — Clarity</h4>
+        <p>Reduce the volume of each breath. Less air, not more. Light breathing improves oxygen delivery and flow to the brain — bringing clarity of thought, focus, and presence.</p>
+      </div>
+      <div class="method-card">
+        <div class="letter">S</div>
+        <h4>Slow — Calm</h4>
+        <p>Decelerate your respiratory rate. A slower breath stimulates the vagus nerve, which signals safety to the brain — activating calm, reducing reactivity, restoring composure.</p>
+      </div>
+      <div class="method-card">
+        <div class="letter">L</div>
+        <h4>Low — Command</h4>
+        <p>Breathe low in the body — supported by the diaphragm. Low breathing improves your ability to handle stress and steadies attention, giving you command under pressure.</p>
       </div>
     </div>
-  </section>
+    <p style="margin-top:18px; text-align:center; color:var(--ember); font-style:italic;">✦ The Quiet Breath ✦</p>
+  </div>
+</section>
 
-  <!-- METHOD -->
-  <section class="section" style="border-top:1px solid rgba(245,240,232,0.07);">
-    <div class="container">
-      <div style="text-align:center; max-width:580px; margin:0 auto;">
-        <span class="section-label">The Method</span>
-        <h2>N · L · S · L</h2>
-        <span class="rule"></span>
-        <p>There is a way through. It's not what you've been told. It's not what you've tried before.</p><p style="margin-top:0.8rem;">Four small habits. One big shift.</p>
+<section id="outcome">
+  <div class="wrap">
+    <div class="kicker">The Outcome</div>
+    <h2>H.E.R.</h2>
+    <p>What happens on the other side? You show up differently. At work. At home. In the quiet moments. Not because you try harder. Because something has shifted — at the level where it counts.</p>
+    <div class="her-grid">
+      <div class="her-card">
+        <div class="letter">H</div>
+        <h4>Hardiness</h4>
+        <p>Peak performance in the green zone — with flow, poise, and the confidence that comes from a nervous system that is genuinely resourced.</p>
       </div>
-      <div class="method-grid">
-        <div class="method-card">
-          <div class="method-letter">L</div>
-          <h3>Light — Clarity</h3>
-          <p>Reduce the volume of each breath. Less air, not more. Light breathing improves oxygen delivery and flow to the brain — bringing clarity of thought, focus, and presence.</p>
-        </div>
-        <div class="method-card">
-          <div class="method-letter">S</div>
-          <h3>Slow — Calm</h3>
-          <p>Decelerate your respiratory rate. A slower breath stimulates the Vagus Nerve, which signals safety to the brain — activating calm, reducing reactivity, restoring composure.</p>
-        </div>
-        <div class="method-card">
-          <div class="method-letter">L</div>
-          <h3>Low — Command</h3>
-          <p>Breathe low in the body — supported by the diaphragm. Low breathing improves your ability to handle stress and steadies attention, giving you command under pressure.</p>
-        </div>
+      <div class="her-card">
+        <div class="letter">E</div>
+        <h4>Endurance</h4>
+        <p>When the yellow is unavoidable — and it always is — awareness and The Quiet Breath maintain momentum without burning through your reserves.</p>
       </div>
-      <div class="ornament">✦ The Quiet Breath ✦</div>
-
-      <!-- H.E.R. -->
-      <div style="text-align:center; max-width:600px; margin:0 auto 3rem;">
-        <span class="section-label">The Outcome</span>
-        <h2>H.E.R.</h2>
-        <span class="rule"></span>
-        <p>What happens on the other side? You show up differently. At work. At home. In the quiet moments. Not because you try harder. Because something has shifted — at the level where it counts.</p>
-      </div>
-      <div class="method-grid" style="margin-top:0; margin-bottom:3rem;">
-        <div class="method-card">
-          <div class="method-letter">H</div>
-          <h3>Hardiness</h3>
-          <p>Peak performance in the green zone — with flow, poise, and the confidence that comes from a nervous system that is genuinely resourced.</p>
-        </div>
-        <div class="method-card">
-          <div class="method-letter">E</div>
-          <h3>Endurance</h3>
-          <p>When the yellow is unavoidable — and it always is — awareness and The Quiet Breath maintain momentum without burning through your reserves.</p>
-        </div>
-        <div class="method-card">
-          <div class="method-letter">R</div>
-          <h3>Resilience</h3>
-          <p>True resilience is recovery speed. Moving from yellow back to green quickly, cleanly — <em>without staying too long in the yellow.</em></p>
-        </div>
-      </div>
-
-      <div style="text-align:center;">
-        <p style="max-width:520px; margin:0 auto 2rem;">Rooted in the <strong>COSC Stress Continuum</strong> — the same framework trusted by the US Navy and Marine Corps to regulate performance under pressure.</p>
-        <button type="button" class="btn-ghost" onclick="goTo('about');return false;">Learn the Framework</button>
+      <div class="her-card">
+        <div class="letter">R</div>
+        <h4>Resilience</h4>
+        <p>True resilience is recovery speed. Moving from yellow back to green quickly, cleanly — without staying too long in the yellow.</p>
       </div>
     </div>
-  </section>
-
-  <!-- TESTIMONIAL -->
-  <div class="testimonial-section">
-    <div class="testimonial">
-      <blockquote>"I was amazed by the depth of relaxation and clarity of thought that I was able to achieve by following this protocol. Heather's guidance not only made the practice easy to grasp, but made it an absolute pleasure to experience."</blockquote>
+    <p class="cosc-note">Rooted in the COSC Stress Continuum, adapted from the U.S. Military's Combat and Operational Stress Control framework to regulate performance under pressure.</p>
+    <blockquote>
+      I was amazed by the depth of relaxation and clarity of thought that I was able to achieve by following this protocol. Heather's guidance not only made the practice easy to grasp, but made it an absolute pleasure to experience.
       <cite>A.T. · Client</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section id="start-here">
+  <div class="wrap" style="text-align:center;">
+    <div class="kicker">Start Here</div>
+    <h2>The Regulated Preview</h2>
+    <p style="margin:0 auto;">A complimentary exploratory session — 20 minutes, no commitment. Three tools. A felt sense of what is possible.</p>
+    <div class="buttons" style="margin-top:22px;">
+      <a class="btn-primary" href="https://calendly.com/generationalhealth-duck">Book Your Complimentary Session</a>
     </div>
   </div>
+</section>
 
-  <!-- CTA BAND -->
-  <div class="cta-band">
-    <div class="container--narrow">
-      <span class="section-label">Start Here</span>
-      <h2 style="margin-bottom:1rem;">The Regulated Preview</h2>
-      <span class="rule"></span>
-      <p style="margin-bottom:2rem;">A complimentary exploratory session — 20 minutes, no commitment. Three tools. A felt sense of what is possible.</p>
-      <a href="https://calendly.com/generationalhealth-duck" target="_blank" class="btn-primary">Book Your Complimentary Session</a>
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="kicker">About</div>
+    <h2>The most powerful tool you have hasn't been taught in any boardroom. And it's been with you the whole time.</h2>
+    <p>The Regulated Executive exists at the intersection of performance science, nervous system regulation, and the lived reality of high-stakes leadership.</p>
+
+    <div style="margin-top:28px; display:flex; gap:24px; flex-wrap:wrap; align-items:flex-start;">
+      <img src="/portrait.jpg" alt="Heather Greaves — The Regulated Executive" style="width:180px; border-radius:6px; flex-shrink:0;">
+      <div>
+        <h3 style="font-size:18px;">Heather Greaves — Breath Reeducation Practitioner &amp; Yoga Therapist</h3>
+        <p style="font-size:14px; color:#5c5c5c;">COSC Framework · Evidence-Based Practice<br>
+        20+ Years · Brantford, ON · Global via Video<br>
+        Executive, Entrepreneur &amp; Non-Profit Context</p>
+      </div>
+    </div>
+
+    <div style="margin-top:36px;">
+      <div class="kicker">My Story</div>
+      <h3 style="font-size:22px; margin-bottom:14px;">Twenty years ago, I thought I knew.</h3>
+      <p>I was good at my work. I showed up. I delivered. But something followed me home every night. And I didn't know what it was.</p>
+      <p>The answer wasn't where I expected. It wasn't a course. It wasn't a coach. It wasn't a morning routine. It was something so simple — I almost missed it.</p>
+      <p>Twenty years of practice. Thousands of hours. One discovery that changed everything. I built The Regulated Executive so you don't have to find it the long way.</p>
+      <p><a href="#story">Read the full story →</a></p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <div class="kicker">The Framework</div>
+      <h3 style="font-size:22px; margin-bottom:8px;">The COSC Stress Continuum</h3>
+      <p>There is a map. Not a metaphor. Not a concept. A real map — of where you are right now and how to get to somewhere better. Four zones. You live in one of them today. Most people have no idea which one.</p>
+      <div class="zones">
+        <div class="zone green"><div class="dot"></div><b>Green — Ready</b><p>Clear thinking. Decisive. Fully present. Peak performance.</p></div>
+        <div class="zone yellow"><div class="dot"></div><b>Yellow — Reacting</b><p>Activated. Necessary for growth. The skill is returning to green quickly.</p></div>
+        <div class="zone orange"><div class="dot"></div><b>Orange — Injured</b><p>Insomnia. Irritability. Decision fatigue. Burnout approaching.</p></div>
+        <div class="zone red"><div class="dot"></div><b>Red — Ill</b><p>Complete breakdown. Chronic illness. System failure.</p></div>
+      </div>
+      <p class="cosc-note">Adapted from the U.S. Military's Combat and Operational Stress Control framework: Combat · Operational · Stress · Control.</p>
+    </div>
+
+    <blockquote style="margin-top:32px;">
+      This isn't about slowing down. It's about gaining the physiological control to perform at your ceiling — then genuinely recover when it matters.
+    </blockquote>
+    <p><a href="#services">See How We Work Together →</a></p>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="kicker">Services</div>
+    <h2>Something is about to shift.</h2>
+    <p>Every session is built for people who lead demanding lives. No long programmes. No vague outcomes. Just something real — that you can feel before you leave the room. And a new understanding of what staying healthy actually looks like.</p>
+
+    <div class="offer">
+      <div class="label">Start Here · Complimentary</div>
+      <h3>The Regulated Preview</h3>
+      <div class="meta">Complimentary · Exploratory · 20 Minutes · No Commitment</div>
+      <p>Most people do not know when their breathing is working against them. The discomfort does not feel like a breathing problem. It feels like stress, exhaustion, or a mind that will not quiet down.</p>
+      <p>The Regulated Preview lets the work speak for itself. Three tools. A felt sense of what is possible.</p>
+      <p>Whether you are exploring this for yourself or considering referring the people you serve — the session is the same either way. No charge. No obligation. Just come and see.</p>
+      <p style="font-style:italic;"><b>Who this is for:</b> Entrepreneurs, executive parents, and non-profit leaders who feel wired but tired — and are ready to understand why. If you navigate high-responsibility roles or competing demands, you belong here too.</p>
+      <div class="buttons" style="margin-top:16px;"><a class="btn-primary" href="https://calendly.com/generationalhealth-duck">Book The Regulated Preview</a></div>
+    </div>
+
+    <div class="offer">
+      <div class="label">The Program</div>
+      <h3>The Quiet Breath Program</h3>
+      <div class="meta">Five Sessions · Thirty Days</div>
+      <p>This is where the real change happens. Not in one session. Not overnight. Over thirty days — with support, practice, and precision. Five sessions. Built around you — your physiology, your pace, your life.</p>
+      <p>You'll leave each one with something concrete. Something you can use the same day.</p>
+      <div class="buttons" style="margin-top:16px;"><a class="btn-secondary" href="https://calendly.com/generationalhealth-duck">Book via Calendly</a></div>
+      <p class="cta-note">The Guarantee: if you don't leave your first session with something concrete and usable, you don't pay.</p>
+      <p class="cta-note">A note: breath reeducation works best when your second session follows within two days of your first. This gives you time to practice and ensures you get the support you need before patterns settle.</p>
+    </div>
+
+    <div class="offer">
+      <div class="label">Advanced</div>
+      <h3>Command the Green</h3>
+      <div class="meta">Decided Together · Your Timeline</div>
+      <p>For those who are ready to go further. Some situations call for a longer journey — mapped together, step by step. Structure, duration, and approach decided together. Because no two lives under pressure are the same.</p>
+      <div class="buttons" style="margin-top:16px;"><a class="btn-secondary" href="#contact">Enquire</a></div>
+    </div>
+
+    <div style="margin-top:40px;">
+      <div class="kicker">Who This Is For</div>
+      <h3 style="font-size:22px; margin-bottom:6px;">You might be in the right place if...</h3>
+      <ul class="who-for">
+        <li>You haven't switched off in months</li>
+        <li>You arrive home with nothing left to give</li>
+        <li>You've tried other things — and they didn't stick</li>
+        <li>You want something that works on the body, not just the mind</li>
+        <li>You lead a team, a family, or a mission — and you're running on empty</li>
+      </ul>
+    </div>
+
+    <div style="margin-top:36px;">
+      <div class="kicker">What To Expect</div>
+      <h3 style="font-size:22px; margin-bottom:8px;">This is not therapy. This is training.</h3>
+      <p>You'll leave each session with something real — a changed felt sense, a tool you can use, a shift you can measure.</p>
+      <p>Not a concept. Not a conversation. Something you can feel — and a new understanding of what your body is capable of.</p>
     </div>
   </div>
+</section>
 
-  <footer>
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">The Regulated Executive</div>
-        <span style="display:inline-flex;align-items:center;gap:0.7rem;"><img src="RE_logo.png" alt="RE" style="width:28px;height:28px;border-radius:50%;opacity:0.7;vertical-align:middle;"><span class="footer-tagline">Clarity · Calm · Command</span></span>
-        <div class="footer-legal">© 2025 Heather Greaves · The Regulated Executive. All rights reserved.</div>
-      </div>
-    </div>
-  </footer>
-</div><!-- /home -->
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="kicker">Contact</div>
+    <h2>Begin here.</h2>
+    <p>Whether you're ready to book your first session or simply want to understand if this is the right fit — reach out. Every enquiry is answered personally.</p>
 
-<!-- ══════════════════════════════════════════════ ABOUT -->
-<div id="about" class="page">
-
-  <section style="padding:8rem 0 5rem; border-bottom:1px solid rgba(245,240,232,0.08);">
-    <div class="container">
-      <span class="section-label">About</span>
-      <h1><span style="font-size:clamp(0.95rem,1.6vw,1.2rem); line-height:1.5;">The most powerful tool you have hasn't been taught in any boardroom. And it's been with you the whole time.</span></h1>
-      <span class="rule rule--left" style="margin-top:1.5rem; margin-bottom:1.5rem;"></span>
-      <p style="max-width:580px; font-size:clamp(1.05rem,1.5vw,1.25rem);">The Regulated Executive exists at the intersection of performance science, nervous system regulation, and the lived reality of high-stakes leadership.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="about-grid">
-        <div>
-          <img src="portrait.jpg" alt="Heather Greaves — The Regulated Executive" class="portrait-img">
-          <div class="credential-strip">
-            <div class="credential">Heather Greaves — Breath Reeducation Practitioner &amp; Yoga Therapist</div>
-            <div class="credential">COSC Framework · Evidence-Based Practice</div>
-            <div class="credential">20+ Years · Brantford, ON · Global via Video</div>
-            <div class="credential">Executive, Entrepreneur &amp; Non-Profit Context</div>
-          </div>
+    <div class="contact-grid">
+      <div>
+        <div class="kicker" style="margin-top:24px;">What Happens Next</div>
+        <h3 style="font-size:20px; margin-bottom:10px;">No intake forms. No waiting lists.</h3>
+        <p>Send your details and I'll be in touch within one business day to confirm your session or answer any questions about the method.</p>
+        <p style="font-style:italic;">The Regulated Preview — a complimentary exploratory session, 20 minutes, no commitment — is the natural first step. Three tools. A felt sense of what is possible.</p>
+        <div class="contact-detail" style="margin-top:20px;">
+          <div class="label">Email</div>
+          <a href="mailto:Info@TheRegulatedExecutive.com">Info@TheRegulatedExecutive.com</a>
         </div>
-        <div>
-          <span class="section-label">My Story</span>
-          <h2 style="margin-bottom:1.2rem;">Twenty years ago,<br>I thought I knew.</h2>
-          <p style="margin-bottom:1.4rem;">I was good at my work. I showed up. I delivered. But something followed me home every night. And I didn't know what it was.</p>
-          <p style="margin-bottom:1.4rem;">The answer wasn't where I expected. It wasn't a course. It wasn't a coach. It wasn't a morning routine. It was something so simple — I almost missed it.</p>
-          <p style="margin-bottom:1.4rem;">Twenty years of practice. Thousands of hours. One discovery that changed everything. I built The Regulated Executive so you don't have to find it the long way.</p>
-          <p style="margin-bottom:2rem; font-style:italic;"><button onclick="goTo('blog')" type="button" style="background:none;border:none;color:var(--amber);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;cursor:pointer;padding:0;text-decoration:underline;">Read the full story →</button></p>
-
-          <div class="cosc-block">
-            <span class="section-label">The Framework</span>
-            <h3 style="color:var(--cream); margin-bottom:0.8rem;">The COSC Stress Continuum</h3>
-            <p style="margin-bottom:1.5rem;">There is a map. Not a metaphor. Not a concept. A real map — of where you are right now and how to get to somewhere better. Four zones. You live in one of them today. Most people have no idea which one.</p>
-
-            <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin:1.5rem 0;">
-              <div style="background:#2D6A4F; padding:1.2rem 0.8rem; text-align:center;">
-                <div style="font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.2em; color:#ffffff; font-weight:600; margin-bottom:0.4rem;">GREEN</div>
-                <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:0.85rem; color:rgba(255,255,255,0.8); margin-bottom:0.6rem;">Ready</div>
-                <div style="width:30px; height:1px; background:rgba(255,255,255,0.3); margin:0 auto 0.6rem;"></div>
-                <div style="font-size:0.78rem; color:rgba(255,255,255,0.85); line-height:1.5;">Clear thinking. Decisive. Fully present. Peak performance.</div>
-              </div>
-              <div style="background:#C9A227; padding:1.2rem 0.8rem; text-align:center;">
-                <div style="font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.2em; color:#ffffff; font-weight:600; margin-bottom:0.4rem;">YELLOW</div>
-                <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:0.85rem; color:rgba(255,255,255,0.8); margin-bottom:0.6rem;">Reacting</div>
-                <div style="width:30px; height:1px; background:rgba(255,255,255,0.3); margin:0 auto 0.6rem;"></div>
-                <div style="font-size:0.78rem; color:rgba(255,255,255,0.9); line-height:1.5;">Activated. Necessary for growth. The skill is returning to green quickly.</div>
-              </div>
-              <div style="background:#C96A2B; padding:1.2rem 0.8rem; text-align:center;">
-                <div style="font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.2em; color:#ffffff; font-weight:600; margin-bottom:0.4rem;">ORANGE</div>
-                <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:0.85rem; color:rgba(255,255,255,0.8); margin-bottom:0.6rem;">Injured</div>
-                <div style="width:30px; height:1px; background:rgba(255,255,255,0.3); margin:0 auto 0.6rem;"></div>
-                <div style="font-size:0.78rem; color:rgba(255,255,255,0.9); line-height:1.5;">Insomnia. Irritability. Decision fatigue. Burnout approaching.</div>
-              </div>
-              <div style="background:#9B2335; padding:1.2rem 0.8rem; text-align:center;">
-                <div style="font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.2em; color:#ffffff; font-weight:600; margin-bottom:0.4rem;">RED</div>
-                <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:0.85rem; color:rgba(255,255,255,0.8); margin-bottom:0.6rem;">Ill</div>
-                <div style="width:30px; height:1px; background:rgba(255,255,255,0.3); margin:0 auto 0.6rem;"></div>
-                <div style="font-size:0.78rem; color:rgba(255,255,255,0.9); line-height:1.5;">Complete breakdown. Chronic illness. System failure.</div>
-              </div>
-            </div>
-            <p style="font-size:0.8rem; color:rgba(224,136,64,0.6); font-style:italic; text-align:right;">Trusted by the US Navy and Marine Corps</p>
-
-            <div class="cosc-row">
-              <div class="cosc-item"><div class="cosc-letter">C</div><div class="cosc-word">Combat</div></div>
-              <div class="cosc-item"><div class="cosc-letter">O</div><div class="cosc-word">Operational</div></div>
-              <div class="cosc-item"><div class="cosc-letter">S</div><div class="cosc-word">Stress</div></div>
-              <div class="cosc-item"><div class="cosc-letter">C</div><div class="cosc-word">Control</div></div>
-            </div>
-          </div>
-
-          <div style="margin-top:3rem;">
-            <span class="section-label">The Practice</span>
-            <p>My signature practice at the centre of this work has a name. It has four parts. It takes less time than you think. And the first time you feel it work — you'll wonder why nobody told you sooner.</p>
-          </div>
+        <div class="contact-detail" style="margin-top:14px;">
+          <div class="label">Location</div>
+          <p style="margin:0;">Brantford, ON · Serving clients globally via video session.</p>
         </div>
       </div>
+
+      <form class="enquiry" onsubmit="return false;">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Your Role">
+        <select required>
+          <option value="" disabled selected>I'm Interested In</option>
+          <option>The Regulated Preview — Complimentary Exploratory Session</option>
+          <option>The Quiet Breath Program — Five Sessions · Thirty Days</option>
+          <option>Command the Green — Program Decided Together</option>
+          <option>Not sure yet — just exploring</option>
+        </select>
+        <textarea placeholder="Anything Else" rows="4"></textarea>
+        <button type="submit">Send Enquiry</button>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section style="padding:4rem 0; border-top:1px solid rgba(245,240,232,0.08); text-align:center;">
-    <div class="container--narrow">
-      <p style="font-style:italic; font-size:clamp(1.2rem,1.7vw,1.5rem); color:var(--cream); line-height:1.7;">"This isn't about slowing down. It's about gaining the physiological control to perform at your ceiling — then genuinely recover when it matters."</p>
-      <span class="rule" style="margin-top:2rem; margin-bottom:2rem;"></span>
-      <button type="button" class="btn-primary" onclick="goTo('services');return false;">See How We Work Together</button>
-    </div>
-  </section>
+<!-- ============ STORY ============ -->
+<section id="story">
+  <div class="wrap story-body">
+    <div class="kicker">Story</div>
+    <h2>The Day My Son Told Me the Truth</h2>
+    <p style="font-size:14px; color:#5c5c5c;">by Heather Greaves · The Regulated Executive</p>
 
-  <footer>
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">The Regulated Executive</div>
-        <span style="display:inline-flex;align-items:center;gap:0.7rem;"><img src="RE_logo.png" alt="RE" style="width:28px;height:28px;border-radius:50%;opacity:0.7;vertical-align:middle;"><span class="footer-tagline">Clarity · Calm · Command</span></span>
-        <div class="footer-legal">© 2025 Heather Greaves · The Regulated Executive. All rights reserved.</div>
-      </div>
-    </div>
-  </footer>
-</div><!-- /about -->
+    <p style="margin-top:20px;">About twenty years ago, my son told me I was too intrusive. He needed me to back off.</p>
+    <p>Shock. Hurt. Confusion. All three arrived at once, and I didn't know what to do with any of them. What would happen to our relationship? What kind of mother had I been? It was an awkward season for the whole family — the kind of quiet that sits heavy and follows you into sleep.</p>
+    <p>What I didn't know then was that moment was a gift.</p>
+    <p>I had inherited attitudes, behaviours, and characteristics from the authority figures in my own life — people who loved me, people who did their best — but some of what they passed down was creating emotional distance in my relationships without my even knowing it. I didn't like those patterns in myself. I just didn't know I had the power to change them. No one had told me that was an option.</p>
 
-<!-- ══════════════════════════════════════════════ SERVICES -->
-<div id="services" class="page">
+    <blockquote>Getting overwhelmed is not a character flaw. It's an unregulated nervous system — and it can be addressed, deliberately and gently, breath by breath.</blockquote>
 
-  <section style="padding:8rem 0 4rem; border-bottom:1px solid rgba(245,240,232,0.08);">
-    <div class="container">
-      <span class="section-label">Services</span>
-      <h1 style="margin-bottom:1.2rem;">Something is about to shift.</h1>
-      <p style="max-width:600px; font-size:1.1rem; color:var(--cream); line-height:1.7;">Every session is built for people who lead demanding lives. No long programmes. No vague outcomes. Just something real — that you can feel before you leave the room. And a new understanding of what staying healthy actually looks like.</p>
-    </div>
-  </section>
+    <p>Some of my most challenging days were the twelve-hour days I spent training yoga teachers. I did regulate my nervous system during the teaching — it was the nature of the work. At the time I knew to breathe deeper, lower in the body — and like most people, to exhale slowly through the mouth when stress hit. It's the most common advice given. But it's not the same as The Quiet Breath. What I hadn't yet discovered was Light and Slow — less air, quieter, in and out through the nose — the shift that actually changed the physiology. Looking back, if I had known the COSC Stress Continuum then, I would have welcomed those yellow zone signals and managed the stress with far more intention.</p>
+    <p>A leadership course cracked something open. I began to understand that we are living in a modern age that calls for a different way of showing up — in family, in community, in business. That the emotional distance I was experiencing was not a life sentence. That the power to become a positive influence had always been in my hands.</p>
+    <p>So I did the work. Rigorous, honest, sometimes painful work. I studied Darren Hardy's Hero Journey — one of the most demanding things I have ever committed to — and I didn't do it alone. I brought an intimate group of my yoga students alongside me, and we met every other week for months, holding space for each other through the hard parts. What grew in that circle was something sacred: truth-telling, accountability, and the kind of belonging that reminds you who you really are.</p>
+    <p>That community changed me. And it pointed me toward the work I do now.</p>
+    <p>Today I lead The Regulated Executive — a breath reeducation practice serving entrepreneurs, executive parents, and non-profit leaders who are exhausted by the gap between who they are at work and who they arrive as at home. I know that gap intimately. I lived it. What I've since learned is that getting overwhelmed is not a character flaw — it's an unregulated nervous system, and it can be addressed, deliberately and gently, breath by breath.</p>
+    <p>Fast forward twenty years from that hard conversation with my son: our relationship is emotionally close now. It took time, intention, and a willingness to keep choosing growth over ego — and I rarely have to check and remind myself anymore. My faith sustained me through the in-between — the seasons of not knowing if the work was working, the moments of sitting still long enough to let God's love and wisdom express through me.</p>
+    <p>I share all of this because I know I am not the only one.</p>
+    <p>There are people over 50 who have poured themselves into careers, children, congregations, and causes — and quietly lost themselves somewhere in the giving. People who feel the distance in their relationships but don't have the language for what's wrong. People who are accomplished by every external measure and still running on empty and feeling unfulfilled.</p>
+    <p><b>I changed. So can you.</b><br>And I am here — if you are ready.</p>
 
-  <section style="padding:4rem 0; border-bottom:1px solid rgba(245,240,232,0.08);">
-    <div class="container">
-      <div class="services-grid">
+    <p class="story-byline">Heather Greaves · Breath Reeducation Practitioner · The Regulated Executive · Brantford, Ontario</p>
+    <div class="buttons" style="margin-top:20px;"><a class="btn-primary" href="https://calendly.com/generationalhealth-duck">Book a Complimentary Session</a></div>
+  </div>
+</section>
 
-        <!-- The Regulated Preview -->
-        <div class="service-card featured">
-          <span class="service-tag">Start Here · Complimentary</span>
-
-          <div class="service-name">The Regulated Preview</div>
-
-          <div class="service-detail">Complimentary · Exploratory · 20 Minutes · No Commitment</div>
-          <p style="margin-bottom:1.2rem;">Most people do not know when their breathing is working against them. The discomfort does not feel like a breathing problem. It feels like stress, exhaustion, or a mind that will not quiet down.</p>
-          <p style="margin-bottom:1.2rem;">The Regulated Preview lets the work speak for itself. Three tools. A felt sense of what is possible.</p>
-          <p style="margin-bottom:1.2rem;">Whether you are exploring this for yourself or considering referring the people you serve — the session is the same either way. No charge. No obligation. Just come and see.</p>
-          <p style="margin-bottom:1.5rem;"><em>Who this is for:</em> Entrepreneurs, executive parents, and non-profit leaders who feel wired but tired — and are ready to understand why. If you navigate high-responsibility roles or competing demands, you belong here too.</p>
-          <a href="https://calendly.com/generationalhealth-duck" target="_blank" class="btn-primary">Book The Regulated Preview</a>
-        </div>
-
-        <!-- Quiet Breath Program -->
-        <div class="service-card">
-          <span class="service-tag">The Program</span>
-
-          <div class="service-name">The Quiet Breath Program</div>
-
-          <div class="service-detail">Five Sessions · Thirty Days</div>
-          <p style="margin-bottom:1.2rem;">This is where the real change happens.</p>
-          <p style="margin-bottom:1.2rem;">Not in one session. Not overnight. Over thirty days — with support, practice, and precision. Five sessions. Built around you — your physiology, your pace, your life.</p>
-          <p style="margin-bottom:1.5rem;">You'll leave each one with something concrete. Something you can use the same day.</p>
-          <a href="https://calendly.com/generationalhealth-duck" target="_blank" class="btn-primary">Book via Calendly</a>
-          <div style="margin-top:1.5rem; padding:1rem 1.2rem; border:1px solid rgba(224,136,64,0.25); background:rgba(224,136,64,0.05);">
-            <span class="section-label" style="margin-bottom:0.5rem;">The Guarantee</span>
-            <p style="font-size:0.95rem; font-style:italic; color:var(--cream);">If you don't leave your first session with something concrete and usable, you don't pay.</p>
-          </div>
-          <p style="margin-top:1.5rem; font-size:0.95rem; font-style:italic; color:rgba(245,240,232,0.55); max-width:560px;">A note: Breath reeducation works best when your second session follows within two days of your first. This gives you time to practice and ensures you get the support you need before patterns settle.</p>
-        </div>
-
-        <!-- Command the Green -->
-        <div class="service-card">
-          <span class="service-tag">Advanced · Bespoke</span>
-
-          <div class="service-name">Command the Green</div>
-
-          <div class="service-detail">Bespoke · Decided Together · Your Timeline</div>
-          <p style="margin-bottom:1.2rem;">For those who are ready to go further.</p>
-          <p style="margin-bottom:1.5rem;">Some situations call for a longer journey — mapped together, step by step. Structure, duration, and approach decided together. Because no two lives under pressure are the same.</p>
-          <button type="button" class="btn-ghost" onclick="goTo('contact');return false;">Enquire</button>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section style="padding:4rem 0; border-bottom:1px solid rgba(245,240,232,0.08);">
-    <div class="container">
-      <div class="two-col">
-        <div>
-          <span class="section-label">Who This Is For</span>
-          <h2 style="margin-bottom:1.2rem;">You might be in the right place if...</h2>
-          <ul style="list-style:none; padding:0; margin:0;">
-            <li style="padding:0.6rem 0; border-bottom:1px solid rgba(245,240,232,0.08); color:var(--cream);">✦ &nbsp;You haven't switched off in months</li>
-            <li style="padding:0.6rem 0; border-bottom:1px solid rgba(245,240,232,0.08); color:var(--cream);">✦ &nbsp;You arrive home with nothing left to give</li>
-            <li style="padding:0.6rem 0; border-bottom:1px solid rgba(245,240,232,0.08); color:var(--cream);">✦ &nbsp;You've tried other things — and they didn't stick</li>
-            <li style="padding:0.6rem 0; border-bottom:1px solid rgba(245,240,232,0.08); color:var(--cream);">✦ &nbsp;You want something that works on the body, not just the mind</li>
-            <li style="padding:0.6rem 0; color:var(--cream);">✦ &nbsp;You lead a team, a family, or a mission — and you're running on empty</li>
-          </ul>
-        </div>
-        <div>
-          <span class="section-label">What To Expect</span>
-          <h2 style="margin-bottom:1.2rem;">This is not therapy.<br>This is training.</h2>
-          <p style="margin-bottom:1rem;">You'll leave each session with something real — a changed felt sense, a tool you can use, a shift you can measure.</p>
-          <p>Not a concept. Not a conversation. Something you can feel — and a new understanding of what your body is capable of.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</div><!-- /services -->
-
-<!-- ══════════════════════════════════════════════ CONTACT -->
-<div id="contact" class="page">
-
-  <section style="padding:10rem 0 5rem; border-bottom:1px solid rgba(245,240,232,0.08);">
-    <div class="container">
-      <span class="section-label">Contact</span>
-      <h1>Begin here.</h1>
-      <span class="rule rule--left" style="margin-top:1.5rem; margin-bottom:1.5rem;"></span>
-      <p style="max-width:520px; font-size:clamp(1rem,1.4vw,1.2rem);">Whether you're ready to book your first session or simply want to understand if this is the right fit — reach out. Every enquiry is answered personally.</p>
-    </div>
-  </section>
-
-  <section style="padding:3rem 0;">
-    <div class="container">
-      <div class="contact-grid">
-        <div>
-          <span class="section-label">What Happens Next</span>
-          <h2 style="margin-bottom:1.4rem;">No intake forms.<br>No waiting lists.</h2>
-          <p style="margin-bottom:1.2rem;">Send your details and I'll be in touch within one business day to confirm your session or answer any questions about the method.</p>
-          <p><em>The Regulated Preview</em> — a complimentary exploratory session, 20 minutes, no commitment — is the natural first step. Three tools. A felt sense of what is possible.</p>
-
-          <div class="contact-aside">
-            <span class="section-label">Email</span>
-            <p><a href="mailto:hgyoga@gmail.com" style="color:var(--amber); font-size:1.05rem;">hgyoga@gmail.com</a></p>
-          </div>
-          <div class="contact-aside">
-            <span class="section-label">Location</span>
-            <p>Brantford, ON · Serving clients globally via video session.</p>
-          </div>
-
-        </div>
-
-        <div>
-          <form onsubmit="handleSubmit(event)">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Your name" required>
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="your@email.com" required>
-            <label for="role">Your Role</label>
-            <input type="text" id="role" placeholder="e.g. Founder, Executive Director, COO">
-            <label for="interest">I'm Interested In</label>
-            <select id="interest">
-              <option value="">Select a service</option>
-              <option>The Regulated Preview — Complimentary Exploratory Session</option>
-              <option>The Quiet Breath Program — Five Sessions · Thirty Days</option>
-              <option>Command the Green — Bespoke Program</option>
-              <option>Not sure yet — just exploring</option>
-            </select>
-            <label for="message">Anything Else</label>
-            <textarea id="message" placeholder="Tell me what's going on — the wired-but-tired version is fine."></textarea>
-            <button type="submit" class="btn-primary" style="width:100%; border:none; cursor:pointer;">Send Enquiry</button>
-          </form>
-          <div id="form-success" style="display:none; margin-top:2rem; padding:2rem; border:1px solid rgba(224,136,64,0.3); background:rgba(224,136,64,0.06); text-align:center;">
-            <span class="section-label">Thank You</span>
-            <p style="color:var(--cream); margin-top:0.5rem;">Your message is received. I'll be in touch within one business day.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">The Regulated Executive</div>
-        <span style="display:inline-flex;align-items:center;gap:0.7rem;"><img src="RE_logo.png" alt="RE" style="width:28px;height:28px;border-radius:50%;opacity:0.7;vertical-align:middle;"><span class="footer-tagline">Clarity · Calm · Command</span></span>
-        <div class="footer-legal">© 2025 Heather Greaves · The Regulated Executive. All rights reserved.</div>
-      </div>
-    </div>
-  </footer>
-</div><!-- /contact -->
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="#home"><img src="/RE_logo.png" alt="The Regulated Executive seal"> The Regulated Executive</a>
+    <div class="pillars">Clarity · Calm · Command</div>
+    <div>© 2026 Heather Greaves · The Regulated Executive. All rights reserved.</div>
+  </div>
+</footer>
 
 <script>
-  function goTo(id) {
-    var pages = document.querySelectorAll('.page');
-    for (var i = 0; i < pages.length; i++) {
-      pages[i].style.display = 'none';
-      pages[i].classList.remove('active');
-    }
-    var target = document.getElementById(id);
-    if (!target) return;
-    target.style.display = 'block';
-    target.classList.add('active');
-    var mob = document.getElementById('mobileNav');
-    if (mob) mob.style.display = 'none';
-    var navBtns = document.querySelectorAll('.nav-links button');
-    for (var j = 0; j < navBtns.length; j++) {
-      navBtns[j].style.color = '';
-    }
-    var activeBtns = document.querySelectorAll('.nav-links button[onclick*="' + id + '"]');
-    for (var k = 0; k < activeBtns.length; k++) {
-      activeBtns[k].style.color = '#E08840';
-    }
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    window.scrollTo({top: 0, left: 0, behavior: 'instant'});
-  }
-
-  function toggleMenu() {
-    var m = document.getElementById('mobileNav');
-    m.style.display = (m.style.display === 'flex') ? 'none' : 'flex';
-  }
-
-  window.addEventListener('scroll', function() {
-    var nav = document.getElementById('mainNav');
-    if (window.scrollY > 40) { nav.classList.add('scrolled'); }
-    else { nav.classList.remove('scrolled'); }
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  toggle.addEventListener('click', function(){
+    var open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
   });
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    document.querySelector('form').style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
-  }
-
-  function checkGrid() {
-    var g = document.querySelector('.who-inner');
-    if (g) g.style.gridTemplateColumns = window.innerWidth < 768 ? '1fr' : '1fr 1fr';
-  }
-  window.addEventListener('resize', checkGrid);
-  checkGrid();
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ links.classList.remove('open'); });
+  });
 </script>
 
-<!-- ══════════════════════════════════════════════ BLOG -->
-<div id="blog" class="page">
-
-  <section style="padding:10rem 0 5rem; border-bottom:1px solid rgba(245,240,232,0.08);">
-    <div class="container">
-      <span class="section-label">Story</span>
-      <h1>The Day My Son<br>Told Me the Truth</h1>
-      <span class="rule rule--left" style="margin-top:1.5rem; margin-bottom:1.5rem;"></span>
-      <p style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.2em; color:rgba(224,136,64,0.7);">by Heather Greaves · The Regulated Executive</p>
-    </div>
-  </section>
-
-  <section style="padding:5rem 0;">
-    <div class="container--narrow">
-
-      <p style="font-size:clamp(1.05rem,1.5vw,1.2rem); margin-bottom:1.8rem;">About twenty years ago, my son told me I was too intrusive. He needed me to back off.</p>
-
-      <p style="margin-bottom:1.8rem;">Shock. Hurt. Confusion. All three arrived at once, and I didn't know what to do with any of them. What would happen to our relationship? What kind of mother had I been? It was an awkward season for the whole family — the kind of quiet that sits heavy and follows you into sleep.</p>
-
-      <p style="margin-bottom:1.8rem;">What I didn't know then was that moment was a gift.</p>
-
-      <p style="margin-bottom:1.8rem;">I had inherited attitudes, behaviours, and characteristics from the authority figures in my own life — people who loved me, people who did their best — but some of what they passed down was creating emotional distance in my relationships without my even knowing it. I didn't like those patterns in myself. I just didn't know I had the power to change them. No one had told me that was an option.</p>
-
-      <div class="pullquote" style="margin:3rem 0;">"Getting overwhelmed is not a character flaw. It's an unregulated nervous system — and it can be addressed, deliberately and gently, breath by breath."</div>
-
-      <p style="margin-bottom:1.8rem;">Some of my most challenging days were the twelve-hour days I spent training yoga teachers. I did regulate my nervous system during the teaching — it was the nature of the work. At the time I knew to breathe deeper, lower in the body — and like most people, to exhale slowly through the mouth when stress hit. It's the most common advice given. But it's not the same as The Quiet Breath. What I hadn't yet discovered was Light and Slow — less air, quieter, in and out through the nose — the shift that actually changed the physiology. Looking back, if I had known the COSC Stress Continuum then, I would have welcomed those yellow zone signals and managed the stress with far more intention.</p>
-
-      <p style="margin-bottom:1.8rem;">A leadership course cracked something open. I began to understand that we are living in a modern age that calls for a different way of showing up — in family, in community, in business. That the emotional distance I was experiencing was not a life sentence. That the power to become a positive influence had always been in my hands.</p>
-
-      <p style="margin-bottom:1.8rem;">So I did the work. Rigorous, honest, sometimes painful work. I studied Darren Hardy's Hero Journey — one of the most demanding things I have ever committed to — and I didn't do it alone. I brought an intimate group of my yoga students alongside me, and we met every other week for months, holding space for each other through the hard parts. What grew in that circle was something sacred: truth-telling, accountability, and the kind of belonging that reminds you who you really are.</p>
-
-      <p style="margin-bottom:1.8rem;">That community changed me. And it pointed me toward the work I do now.</p>
-
-      <p style="margin-bottom:1.8rem;">Today I lead The Regulated Executive — a breath reeducation practice serving entrepreneurs, executive parents, and non-profit leaders who are exhausted by the gap between who they are at work and who they arrive as at home. I know that gap intimately. I lived it. What I've since learned is that getting overwhelmed is not a character flaw — it's an unregulated nervous system, and it can be addressed, deliberately and gently, breath by breath.</p>
-
-      <p style="margin-bottom:1.8rem;">Fast forward twenty years from that hard conversation with my son: our relationship is emotionally close now. It took time, intention, and a willingness to keep choosing growth over ego — and I rarely have to check and remind myself anymore. My faith sustained me through the in-between — the seasons of not knowing if the work was working, the moments of sitting still long enough to let God's love and wisdom express through me.</p>
-
-      <p style="margin-bottom:1.8rem;">I share all of this because I know I am not the only one.</p>
-
-      <p style="margin-bottom:1.8rem;">There are people over 50 who have poured themselves into careers, children, congregations, and causes — and quietly lost themselves somewhere in the giving. People who feel the distance in their relationships but don't have the language for what's wrong. People who are accomplished by every external measure and still running on empty and feeling unfulfilled.</p>
-
-      <div class="pullquote" style="margin:3rem 0;">I changed. So can you.<br>And I am here — if you are ready.</div>
-
-      <span class="rule" style="margin:3rem auto;"></span>
-
-      <p style="font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.2em; color:rgba(224,136,64,0.7); text-align:center; margin-bottom:3rem;">Heather Greaves · Breath Reeducation Practitioner · The Regulated Executive · Brantford, Ontario</p>
-
-      <div style="text-align:center;">
-        <a href="https://calendly.com/generationalhealth-duck" target="_blank" class="btn-primary">Book a Complimentary Session</a>
-      </div>
-
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">The Regulated Executive</div>
-        <span style="display:inline-flex;align-items:center;gap:0.7rem;"><img src="RE_logo.png" alt="RE" style="width:28px;height:28px;border-radius:50%;opacity:0.7;vertical-align:middle;"><span class="footer-tagline">Clarity · Calm · Command</span></span>
-        <div class="footer-legal">© 2025 Heather Greaves · The Regulated Executive. All rights reserved.</div>
-      </div>
-    </div>
-  </footer>
-</div><!-- /blog -->
-
-<style>
-  #chat-bubble{position:fixed;bottom:1.8rem;right:1.8rem;z-index:9000;}
-  #chat-toggle{width:54px;height:54px;border-radius:50%;background:#E08840;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(224,136,64,0.45);transition:transform 0.3s ease;-webkit-tap-highlight-color:transparent;}
-  #chat-toggle:hover{transform:scale(1.08);}
-  #chat-toggle svg{width:22px;height:22px;fill:#0D1F3C;}
-  #chat-window{display:none;position:fixed;bottom:5rem;right:1.8rem;width:min(360px,calc(100vw - 2rem));height:500px;background:#0D1F3C;border:1px solid rgba(224,136,64,0.25);box-shadow:0 8px 40px rgba(0,0,0,0.5);z-index:9000;flex-direction:column;overflow:hidden;}
-  #chat-window.open{display:flex;}
-  #chat-header{background:rgba(224,136,64,0.1);border-bottom:1px solid rgba(224,136,64,0.2);padding:0.9rem 1.1rem;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
-  #chat-header-title{font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:#E08840;}
-  #chat-header-sub{font-family:'Cormorant Garamond',serif;font-size:0.8rem;color:rgba(245,240,232,0.45);margin-top:0.1rem;}
-  #chat-close{background:none;border:none;color:rgba(245,240,232,0.4);cursor:pointer;font-size:1.1rem;padding:0.2rem;line-height:1;}
-  #chat-close:hover{color:#E08840;}
-  #chat-messages{flex:1;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:0.7rem;-webkit-overflow-scrolling:touch;}
-  .chat-msg{max-width:88%;padding:0.7rem 0.9rem;font-family:'Cormorant Garamond',serif;font-size:0.98rem;line-height:1.6;}
-  .chat-msg.assistant{background:rgba(245,240,232,0.06);border-left:2px solid #E08840;color:#F5F0E8;align-self:flex-start;}
-  .chat-msg.user{background:rgba(224,136,64,0.12);border-right:2px solid #E08840;color:#F5F0E8;align-self:flex-end;text-align:right;}
-  .chat-msg.thinking{font-style:italic;color:rgba(245,240,232,0.35);border-left:2px solid rgba(224,136,64,0.2);align-self:flex-start;background:rgba(245,240,232,0.03);font-family:'Cormorant Garamond',serif;font-size:0.9rem;padding:0.7rem 0.9rem;}
-  #chat-input-row{border-top:1px solid rgba(245,240,232,0.1);padding:0.7rem;display:flex;gap:0.5rem;flex-shrink:0;background:rgba(0,0,0,0.2);}
-  #chat-input{flex:1;background:rgba(245,240,232,0.05);border:1px solid rgba(245,240,232,0.12);color:#F5F0E8;font-family:'Cormorant Garamond',serif;font-size:0.95rem;padding:0.55rem 0.8rem;outline:none;-webkit-appearance:none;border-radius:0;}
-  #chat-input:focus{border-color:#E08840;}
-  #chat-input::placeholder{color:rgba(245,240,232,0.25);}
-  #chat-send{background:#E08840;border:none;color:#0D1F3C;font-family:'Cinzel',serif;font-size:0.52rem;letter-spacing:0.18em;text-transform:uppercase;padding:0 0.9rem;cursor:pointer;transition:opacity 0.2s;flex-shrink:0;}
-  #chat-send:disabled{opacity:0.35;cursor:not-allowed;}
-</style>
-
-<div id="chat-bubble">
-  <button id="chat-toggle" onclick="toggleChat()" aria-label="Chat">
-    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
-  </button>
-</div>
-
-<div id="chat-window">
-  <div id="chat-header">
-    <div><div id="chat-header-title">The Regulated Executive</div><div id="chat-header-sub">Ask me anything</div></div>
-    <button id="chat-close" onclick="toggleChat()">&#x2715;</button>
-  </div>
-  <div id="chat-messages">
-    <div class="chat-msg assistant">Hello. I am here to answer your questions about The Regulated Executive and how breath reeducation might help you. What is on your mind?</div>
-  </div>
-  <div id="chat-input-row">
-    <input id="chat-input" type="text" placeholder="Ask a question..." onkeydown="if(event.key==='Enter'){sendChat();}">
-    <button id="chat-send" onclick="sendChat()">Send</button>
-  </div>
-</div>
-
-<script>
-var chatHistory=[];var chatOpen=false;
-function toggleChat(){chatOpen=!chatOpen;var w=document.getElementById('chat-window');if(chatOpen){w.classList.add('open');document.getElementById('chat-input').focus();}else{w.classList.remove('open');}}
-function addMsg(role,text){var m=document.getElementById('chat-messages');var d=document.createElement('div');d.className='chat-msg '+role;d.textContent=text;m.appendChild(d);m.scrollTop=m.scrollHeight;return d;}
-async function sendChat(){var input=document.getElementById('chat-input');var send=document.getElementById('chat-send');var text=input.value.trim();if(!text||send.disabled)return;input.value='';send.disabled=true;addMsg('user',text);chatHistory.push({role:'user',content:text});var thinking=addMsg('thinking','Heather is thinking...');try{var r=await fetch('/.netlify/functions/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:chatHistory})});var data=await r.json();var reply=(data.content&&data.content[0]&&data.content[0].text)?data.content[0].text:'Something went quiet. Please email hgyoga@gmail.com';thinking.remove();addMsg('assistant',reply);chatHistory.push({role:'assistant',content:reply});}catch(e){thinking.remove();addMsg('assistant','Something went quiet. Please email hgyoga@gmail.com');}send.disabled=false;input.focus();}
-</script>
 </body>
+</html>
